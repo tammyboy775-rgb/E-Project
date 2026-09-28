@@ -1,0 +1,186 @@
+/*
+ * Hero
+ * Full-bleed intro banner with headline, CTAs, highlights and the
+ * "trip snapshot" side card.
+ */
+
+.hero-section {
+  position: relative;
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=80');
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 -40px 80px rgba(6, 19, 23, 0.2);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(7, 18, 20, 0.8), rgba(7, 18, 20, 0.38), rgba(7, 18, 20, 0.16));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.7fr);
+  gap: 42px;
+  align-items: end;
+  padding: 96px 0 72px;
+}
+
+.hero-copy {
+  max-width: 640px;
+  color: #fff;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(2.75rem, 5vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  color: #fff;
+}
+
+.hero-description {
+  margin-top: 20px;
+  max-width: 570px;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.hero-highlights {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 18px;
+  margin: 28px 0 0;
+  padding: 0;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hero-highlights li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.hero-highlights li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #8de9c9;
+}
+
+.hero-card {
+  max-width: 360px;
+  margin-left: auto;
+  padding: 24px 22px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(9, 21, 26, 0.38);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.12);
+}
+
+.card-badge {
+  display: inline-flex;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(141, 233, 201, 0.12);
+  color: #9feecf;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-card h2 {
+  margin: 18px 0 10px;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.hero-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+}
+
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #d7f4ea;
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    padding-top: 84px;
+    padding-bottom: 56px;
+  }
+
+  .hero-card {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 560px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.5rem, 9vw, 4rem);
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 500px;
+  }
+
+  .hero-content {
+    padding-top: 72px;
+    padding-bottom: 40px;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-highlights {
+    gap: 10px 14px;
+    font-size: 0.82rem;
+  }
+}

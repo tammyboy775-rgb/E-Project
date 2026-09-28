@@ -1,0 +1,43 @@
+/*
+ * ReviewsPage
+ * Soft hero image plus the rating summary cards.
+ */
+
+.page-hero.page-hero--soft {
+  background:
+    linear-gradient(135deg, rgba(12, 28, 31, 0.82), rgba(64, 90, 83, 0.7)),
+    url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
+}
+
+.review-summary {
+  padding: 10px 0 42px;
+}
+
+.review-summary__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.review-summary__card {
+  padding: 28px 22px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #fffefb 0%, #eef5f2 100%);
+  border: 1px solid rgba(17, 45, 51, 0.08);
+  text-align: center;
+  box-shadow: 0 20px 32px rgba(12, 28, 31, 0.04);
+}
+
+.review-summary__card strong {
+  display: block;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1;
+  color: #112d33;
+}
+
+.review-summary__card span {
+  display: block;
+  margin-top: 12px;
+  color: #4c666d;
+  font-weight: 600;
+}

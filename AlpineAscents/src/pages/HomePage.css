@@ -1,0 +1,12 @@
+/*
+ * HomePage
+ *
+ * The home page has no page-specific CSS of its own: every section it
+ * renders is a component with its own colocated stylesheet —
+ *   Hero.css, Stats.css, FeaturedJourneys.css, WhyChooseUs.css,
+ *   Experiences.css, Testimonials.css, CallToAction.css
+ * plus the shared foundation in App.css (.container, .eyebrow,
+ * .section-heading, .section-spacing).
+ *
+ * Add any home-page-only overrides here.
+ */

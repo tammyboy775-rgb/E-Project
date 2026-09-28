@@ -1,0 +1,17 @@
+/*
+ * ExperiencesPage
+ * Alt hero image plus the "why people choose us" feature list.
+ */
+
+.page-hero.page-hero--alt {
+  background:
+    linear-gradient(135deg, rgba(11, 30, 32, 0.82), rgba(36, 77, 68, 0.7)),
+    url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
+}
+
+/* The section wrapper itself needs no rules: layout comes from the
+   shared .section-grid / .info-panel / .feature-list block in App.css. */
+
+.feature-list.feature-list--compact {
+  gap: 16px;
+}

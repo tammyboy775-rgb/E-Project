@@ -1,0 +1,48 @@
+/*
+ * Stats
+ * The four key-figure tiles shown under the hero on the home page.
+ */
+
+.stats-section {
+  position: relative;
+  background: linear-gradient(180deg, #f3efe8 0%, #ece6dd 100%);
+}
+
+.stats-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(27, 122, 115, 0.04), transparent, rgba(27, 122, 115, 0.04));
+}
+
+.stats-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  padding: 30px 0;
+}
+
+.stat-item {
+  padding: 22px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(19, 38, 45, 0.08);
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(17, 29, 31, 0.04);
+}
+
+.stat-item strong {
+  display: block;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1;
+  color: #12363d;
+}
+
+.stat-item span {
+  display: block;
+  margin-top: 12px;
+  color: #48646a;
+  font-weight: 600;
+}

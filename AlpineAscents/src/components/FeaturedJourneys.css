@@ -1,0 +1,54 @@
+/*
+ * FeaturedJourneys
+ * Grid of featured trip cards (image, meta, difficulty and price).
+ */
+
+.journeys-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.journey-card {
+  overflow: hidden;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #fffaf4 0%, #f3eee8 100%);
+  border: 1px solid rgba(16, 43, 47, 0.08);
+  box-shadow: 0 22px 40px rgba(17, 24, 39, 0.08), 0 0 0 1px rgba(255,255,255,0.8) inset;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.journey-card:hover,
+.journey-card:focus-within {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 26px 40px rgba(17, 24, 39, 0.12);
+}
+
+.journey-card img {
+  height: 260px;
+  object-fit: cover;
+}
+
+.journey-content {
+  padding: 20px 18px 22px;
+}
+
+.journey-meta,
+.journey-detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  color: #5a6e73;
+  font-size: 0.88rem;
+}
+
+.journey-card h3 {
+  margin: 16px 0 14px;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: #122d33;
+}
+
+.journey-detail-row {
+  color: #0e2d34;
+  font-weight: 700;
+}

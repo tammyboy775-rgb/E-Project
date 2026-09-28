@@ -1,0 +1,153 @@
+{
+  "brand": "Alpine Ascents",
+  "header": {
+    "nav": [
+      { "label": "Home", "href": "/" },
+      { "label": "Trips", "href": "/trips" },
+      { "label": "Experiences", "href": "/experiences" },
+      { "label": "Reviews", "href": "/reviews" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "phone": "+234 805 508 1036"
+  },
+  "hero": {
+    "eyebrow": "Adventure, elevated",
+    "title": "Conquer the mountains. Return with stories.",
+    "description": "From glacier trails to summit sunrise climbs, Alpine Ascents designs unforgettable mountain journeys for explorers who want purpose, challenge, and breathtaking beauty in every step.",
+    "primaryCta": "Book a Climb",
+    "secondaryCta": "Explore Trips",
+    "highlights": [
+      "Small-group expeditions",
+      "Certified guides",
+      "Tailored itineraries"
+    ]
+  },
+  "stats": [
+    { "value": "12k+", "label": "Happy adventurers" },
+    { "value": "18", "label": "Years guiding mountains" },
+    { "value": "96%", "label": "Return traveler rate" },
+    { "value": "4.9/5", "label": "Average review score" }
+  ],
+  "featured": [
+    {
+      "title": "Everest Base Camp",
+      "location": "Nepal",
+      "duration": "12 days",
+      "difficulty": "Advanced",
+      "price": "$1,980",
+      "image": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "title": "K2 Expedition",
+      "location": "Pakistan",
+      "duration": "14 days",
+      "difficulty": "Extreme",
+      "price": "$2,820",
+      "image": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "title": "Mount Kilimanjaro",
+      "location": "Tanzania",
+      "duration": "9 days",
+      "difficulty": "High",
+      "price": "$2,180",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "title": "Mont Blanc",
+      "location": "France",
+      "duration": "8 days",
+      "difficulty": "High",
+      "price": "$2,140",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "title": "Matterhorn",
+      "location": "Switzerland",
+      "duration": "7 days",
+      "difficulty": "Moderate",
+      "price": "$1,760",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "title": "Denali",
+      "location": "United States",
+      "duration": "11 days",
+      "difficulty": "Advanced",
+      "price": "$2,640",
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "title": "Aconcagua",
+      "location": "Argentina",
+      "duration": "10 days",
+      "difficulty": "High",
+      "price": "$2,410",
+      "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "title": "Elbrus",
+      "location": "Russia",
+      "duration": "6 days",
+      "difficulty": "Moderate",
+      "price": "$1,540",
+      "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1000&q=80"
+    }
+  ],
+  "benefits": [
+    {
+      "title": "Expert-led treks",
+      "text": "Every route is shaped by local guides who know the terrain, the weather, and the best places to pause for awe.",
+      "icon": "⛰️"
+    },
+    {
+      "title": "Comfort meets challenge",
+      "text": "We blend rigorous adventure with thoughtful logistics, premium camps, and the right pace for your group.",
+      "icon": "🏕️"
+    },
+    {
+      "title": "Responsible travel",
+      "text": "Our itineraries respect local communities, conservation zones, and the long-term health of the landscapes we love.",
+      "icon": "🌿"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Summit coaching",
+      "description": "Build endurance, master alpine skills, and gain confidence before tackling elevation with elite mountain mentorship.",
+      "badge": "Training"
+    },
+    {
+      "title": "Glacier expeditions",
+      "description": "Step onto ice fields, traverse crevasses, and explore remote valleys with seasoned expedition leaders.",
+      "badge": "Expedition"
+    },
+    {
+      "title": "Private retreats",
+      "description": "Enjoy custom itineraries for couples, families, and teams seeking a premium mountain escape.",
+      "badge": "Custom"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Every detail felt considered. The guides were knowledgeable, calm, and incredibly inspiring from the first climb to the final summit toast.",
+      "name": "Emma Clarke",
+      "trip": "Everest Base Camp"
+    },
+    {
+      "quote": "We booked a private retreat for our anniversary and it exceeded every expectation. The scenery was unreal and the service was flawless.",
+      "name": "Daniel & Sarah",
+      "trip": "Dolomites Escape"
+    },
+    {
+      "quote": "Alpine Ascents made learning mountaineering feel safe, exciting, and deeply personal. It turned a bucket-list goal into a real achievement.",
+      "name": "Marcus Lee",
+      "trip": "Summit Coaching"
+    }
+  ],
+  "footer": {
+    "address": "18 Glacier Avenue, Banff, Alberta",
+    "email": "hello@alpineascents.com",
+    "copyright": "© 2026 Alpine Ascents. Crafted for adventure."
+  }
+}

@@ -1,0 +1,188 @@
+/*
+ * Header
+ * Sticky top bar, brand mark, navigation and phone link.
+ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(9, 28, 32, 0.72);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 12px 30px rgba(8, 20, 22, 0.12);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 76px;
+}
+
+.brand-mark__peak {
+  position: relative;
+  width: 20px;
+  height: 16px;
+  display: block;
+  background: #123d42;
+  clip-path: polygon(0% 100%, 22% 56%, 35% 56%, 50% 18%, 66% 56%, 78% 56%, 100% 100%);
+  transform: translateY(1px);
+}
+
+.brand-mark__peak::before,
+.brand-mark__peak::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 2px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  top: auto;
+}
+
+.brand-mark__peak::before {
+  left: 6px;
+}
+
+.brand-mark__peak::after {
+  right: 6px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main-nav a {
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.main-nav a.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #fff;
+  margin: 5px auto;
+  border-radius: 999px;
+}
+
+.header-phone {
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 1024px) {
+  .header-inner {
+    gap: 12px;
+  }
+
+  .main-nav {
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .main-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 10px;
+    padding: 10px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-phone {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    min-height: 64px;
+  }
+
+  .header-inner {
+    min-height: 64px;
+    gap: 8px;
+  }
+
+  .brand-mark__peak {
+    width: 16px;
+    height: 12px;
+  }
+
+  .menu-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .main-nav a {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.78rem;
+  }
+}

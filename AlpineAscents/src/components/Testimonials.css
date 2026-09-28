@@ -1,0 +1,45 @@
+/*
+ * Testimonials
+ * Traveler story quote cards.
+ */
+
+.testimonials-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.testimonial-card {
+  margin: 0;
+  padding: 28px 24px 22px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #f9f5f0 0%, #f1e9e1 100%);
+  border: 1px solid rgba(16, 43, 47, 0.08);
+  box-shadow: 0 18px 30px rgba(11, 27, 30, 0.05), 0 0 0 1px rgba(255,255,255,0.8) inset;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 32px rgba(11, 27, 30, 0.09);
+}
+
+.testimonial-card p {
+  margin: 0;
+  color: #203d44;
+  line-height: 1.85;
+  font-size: 1.02rem;
+}
+
+.testimonial-card footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 22px;
+}
+
+.testimonial-card strong {
+  color: #122d33;
+}
+
+.testimonial-card span {
+  color: #627a7f;
+}

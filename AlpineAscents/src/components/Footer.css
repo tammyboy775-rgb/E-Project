@@ -1,0 +1,60 @@
+/*
+ * Footer
+ * Site footer with brand, contact details and copyright line.
+ */
+
+.site-footer {
+  background: #0d2429;
+  color: rgba(255, 255, 255, 0.82);
+  padding: 36px 0 18px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 18px;
+}
+
+.footer-brand {
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.footer-links a,
+.footer-links p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-bottom {
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-footer {
+    padding-top: 28px;
+  }
+}

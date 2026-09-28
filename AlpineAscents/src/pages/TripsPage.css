@@ -1,0 +1,12 @@
+/*
+ * TripsPage
+ *
+ * The trips page currently leans on shared blocks defined in App.css:
+ *   .page-shell / .page-hero          – common to all inner pages
+ *   .section-grid / .info-panel       – shared with ExperiencesPage
+ *   .feature-list / .feature-item     – shared with ExperiencesPage
+ * while its cards come from FeaturedJourneys.css, WhyChooseUs.css and
+ * CallToAction.css.
+ *
+ * Add trips-only rules (e.g. for .journey-highlights) here.
+ */
