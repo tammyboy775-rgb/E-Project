@@ -1,0 +1,14 @@
+.visitor-counter {
+  color: #f3f6ed;
+  font-size: 0.73rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 420px) {
+  .visitor-counter {
+    font-size: 0.66rem;
+  }
+}

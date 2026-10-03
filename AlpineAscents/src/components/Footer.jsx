@@ -1,14 +1,15 @@
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 export default function Footer({ address, email, copyright, brand }) {
   return (
     <footer className="site-footer">
       <div className="container footer-content">
         <div>
-          <a href="#home" className="brand footer-brand">
+          <Link to="/" className="brand footer-brand">
             <span className="brand-mark">A</span>
             <span>{brand}</span>
-          </a>
+          </Link>
         </div>
 
         <div className="footer-links">

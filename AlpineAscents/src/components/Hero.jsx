@@ -1,6 +1,6 @@
 import './Hero.css'
 
-export default function Hero({ eyebrow, title, description, primaryCta, secondaryCta, highlights }) {
+export default function Hero({ eyebrow, title, description, primaryCta, secondaryCta, highlights, snapshot }) {
   return (
     <section className="hero-section" id="home">
       <div className="hero-overlay" />
@@ -27,13 +27,12 @@ export default function Hero({ eyebrow, title, description, primaryCta, secondar
           </ul>
         </div>
 
-        <aside className="hero-card" aria-label="Trip snapshot">
-          <div className="card-badge">Best seller</div>
-          <h2>Alpine Escape</h2>
-          <p>7-day premium alpine route with glacier views, summit mornings, and luxury lodge nights.</p>
+        <aside className="hero-card" aria-label={snapshot.title}>
+          <div className="card-badge">{snapshot.badge}</div>
+          <h2>{snapshot.title}</h2>
+          <p>{snapshot.description}</p>
           <div className="card-meta">
-            <span>Starts at $1,480</span>
-            <span>Difficulty: Moderate</span>
+            {snapshot.meta.map((item) => <span key={item}>{item}</span>)}
           </div>
         </aside>
       </div>

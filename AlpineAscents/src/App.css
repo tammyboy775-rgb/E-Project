@@ -17,6 +17,7 @@
 .app-shell {
   width: 100%;
   min-height: 100vh;
+  padding-bottom: 36px;
   background:
     radial-gradient(circle at top left, rgba(92, 175, 161, 0.18), transparent 26%),
     radial-gradient(circle at 90% 10%, rgba(13, 83, 79, 0.14), transparent 24%),

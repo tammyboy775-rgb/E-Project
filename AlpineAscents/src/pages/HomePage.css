@@ -10,3 +10,178 @@
  *
  * Add any home-page-only overrides here.
  */
+
+.mountaineering-intro {
+	padding: var(--space-section) 0;
+	background: #f6f4eb;
+}
+
+.mountaineering-intro__grid {
+	display: grid;
+	grid-template-columns: 1fr 0.82fr;
+	gap: 30px 56px;
+	align-items: center;
+}
+
+.mountaineering-intro__copy h2,
+.directory-heading h2 {
+	max-width: 700px;
+	margin: 0;
+	color: var(--color-ink);
+	font-family: var(--font-display);
+	font-size: 2.8rem;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+.mountaineering-intro__copy > p:last-child {
+	max-width: 650px;
+	margin: 20px 0 0;
+	color: var(--color-muted);
+	font-size: 1.05rem;
+	line-height: 1.8;
+}
+
+.mountaineering-intro__grid > img {
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	width: 100%;
+	height: 360px;
+	object-fit: cover;
+}
+
+.mountaineering-mission {
+	padding: 22px 0 0;
+	border-top: 1px solid var(--color-line);
+}
+
+.mountaineering-mission > span {
+	color: var(--color-accent);
+	font-size: 0.75rem;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+}
+
+.mountaineering-mission h3 {
+	margin: 10px 0 8px;
+	color: var(--color-ink);
+	font-family: var(--font-display);
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+.mountaineering-mission p {
+	max-width: 640px;
+	margin: 0;
+	color: var(--color-muted);
+	line-height: 1.75;
+}
+
+.mountaineering-directory {
+	padding: 72px 0 84px;
+	color: var(--color-ink);
+	background: #e8eee4;
+}
+
+.directory-heading {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	margin-bottom: 28px;
+}
+
+.directory-heading h2 { font-size: 2.5rem; }
+
+.directory-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 18px;
+}
+
+.directory-card {
+	min-width: 0;
+	overflow: hidden;
+	border: 1px solid rgba(24, 51, 46, 0.12);
+	background: #f9f8f1;
+	transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.directory-card:hover,
+.directory-card:focus-visible {
+	transform: translateY(-3px);
+	box-shadow: 0 14px 28px rgba(24, 51, 46, 0.12);
+}
+
+.directory-card__image {
+	overflow: hidden;
+	aspect-ratio: 16 / 10;
+	background: #ccd8ca;
+}
+
+.directory-card__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 420ms ease;
+}
+
+.directory-card:hover .directory-card__image img { transform: scale(1.04); }
+
+.directory-card__body {
+	position: relative;
+	min-height: 148px;
+	padding: 18px 20px 20px;
+}
+
+.directory-card__index {
+	color: var(--color-accent);
+	font-size: 0.7rem;
+	font-weight: 800;
+	letter-spacing: 0.1em;
+}
+
+.directory-card h3 {
+	margin: 5px 24px 7px 0;
+	color: var(--color-ink);
+	font-family: var(--font-display);
+	font-size: 1.35rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.directory-card p {
+	margin: 0;
+	color: var(--color-muted);
+	font-size: 0.9rem;
+	line-height: 1.55;
+}
+
+.directory-card__arrow {
+	position: absolute;
+	top: 19px;
+	right: 20px;
+	color: var(--color-accent);
+	font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+	.directory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.mountaineering-intro__grid { gap: 24px; }
+}
+
+@media (max-width: 600px) {
+	.mountaineering-intro { padding: 48px 0; }
+	.mountaineering-intro__grid { grid-template-columns: 1fr; gap: 22px; }
+	.mountaineering-intro__grid > img { grid-column: 1; grid-row: auto; height: 230px; }
+	.mountaineering-intro__copy h2 { font-size: 2.2rem; }
+	.mountaineering-directory { padding: 48px 0 56px; }
+	.directory-heading { display: block; }
+	.directory-heading h2 { font-size: 2.1rem; }
+	.directory-grid { grid-template-columns: 1fr; gap: 12px; }
+	.directory-card__body { min-height: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.directory-card,
+	.directory-card__image img { transition: none; }
+}

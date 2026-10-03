@@ -1,4 +1,21 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+  --color-ink: #18332e;
+  --color-muted: #51655d;
+  --color-deep: #123831;
+  --color-accent: #287565;
+  --color-lime: #d6e89a;
+  --color-paper: #f5f3e9;
+  --color-line: #d8dfd4;
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --space-section: 72px;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -8,10 +25,10 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-body);
   line-height: 1.6;
-  background: #f5f0e9;
-  color: #13262d;
+  background: var(--color-paper);
+  color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,6 +50,11 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:focus-visible {
+  outline: 3px solid #b7d979;
+  outline-offset: 3px;
 }
 
 h1,
@@ -69,4 +91,15 @@ html {
 
 ::-webkit-scrollbar-thumb:active {
   background: linear-gradient(180deg, #0f4b47 0%, #3ba38d 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

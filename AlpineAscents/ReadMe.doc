@@ -1,0 +1,19 @@
+{\rtf1\ansi\deff0
+{\fonttbl{\f0 Calibri;}}
+\fs28\b Alpine Ascents - Assumptions\b0\par
+\fs22\par
+\b Visitor count\b0\par
+The visitor number starts at 1,200 and is stored in this browser's localStorage. sessionStorage prevents more than one increment per browser session. It is a local estimate, not a global visitor total. If browser storage is blocked, the site remains usable and the seed value is shown.\par
+\par
+\b Location and time ticker\b0\par
+The ticker uses the visitor's local clock and requests location through the browser Geolocation API. Location is permission-dependent. If access is denied, times out, or is unsupported, the ticker says Location unavailable. A free OpenStreetMap Nominatim reverse-geocoding request attempts to name the place; rounded latitude and longitude are used when lookup fails. Internet access is required for reverse lookup.\par
+\par
+\b Map\b0\par
+The Records page uses an embedded OpenStreetMap map. No client-side map library is installed. Map tiles require internet access.\par
+\par
+\b Content and images\b0\par
+Mountaineering copy is maintained in project JSON and is for general education, not a substitute for qualified instruction, emergency services, or current local conditions. Page imagery is loaded from Unsplash URLs. Verify local access, permits, forecasts, and route conditions before travel.\par
+\par
+\b Environment\b0\par
+The application is a client-rendered React and Vite site. Nested route refreshes require a static host configured to return index.html for application routes.\par
+}

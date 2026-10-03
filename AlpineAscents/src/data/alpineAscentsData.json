@@ -3,19 +3,34 @@
   "header": {
     "nav": [
       { "label": "Home", "href": "/" },
-      { "label": "Trips", "href": "/trips" },
-      { "label": "Experiences", "href": "/experiences" },
-      { "label": "Reviews", "href": "/reviews" },
+      { "label": "History", "href": "/history", "group": "explore" },
+      { "label": "Types", "href": "/types", "group": "explore" },
+      { "label": "Techniques", "href": "/techniques", "group": "explore" },
+      { "label": "Sheltering", "href": "/sheltering", "group": "explore" },
+      { "label": "Hazards", "href": "/hazards", "group": "explore" },
+      { "label": "Records", "href": "/records", "group": "explore" },
+      { "label": "Clubs", "href": "/clubs" },
+      { "label": "Success Stories", "href": "/success-stories" },
+      { "label": "Gallery", "href": "/gallery" },
+      { "label": "Latest", "href": "/latest" },
+      { "label": "Guidelines", "href": "/guidelines" },
       { "label": "Contact", "href": "/contact" }
     ],
     "phone": "+234 805 508 1036"
   },
+  "visitorCountSeed": 1200,
   "hero": {
     "eyebrow": "Adventure, elevated",
     "title": "Conquer the mountains. Return with stories.",
     "description": "From glacier trails to summit sunrise climbs, Alpine Ascents designs unforgettable mountain journeys for explorers who want purpose, challenge, and breathtaking beauty in every step.",
     "primaryCta": "Book a Climb",
     "secondaryCta": "Explore Trips",
+    "snapshot": {
+      "badge": "Climb with care",
+      "title": "A good day above treeline",
+      "description": "Thoughtful routes, experienced leaders and room to enjoy the journey.",
+      "meta": ["Small groups", "Skill-matched objectives"]
+    },
     "highlights": [
       "Small-group expeditions",
       "Certified guides",
