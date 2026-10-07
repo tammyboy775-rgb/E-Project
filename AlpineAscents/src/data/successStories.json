@@ -1,0 +1,80 @@
+[
+  {
+    "id": "first-glacier",
+    "title": "Learning to move as a rope team",
+    "camp": "Introductory Glacier Skills Camp",
+    "location": "Mount Baker, United States",
+    "region": "North America",
+    "year": 2025,
+    "difficulty": "Beginner",
+    "summary": "A first-time glacier team practiced travel systems, route planning and communication before taking on a guided training objective. The camp's main achievement was learning to make decisions together, not reaching a summit.",
+    "participant": "Maya Chen (fictional participant)",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Roped climbers approaching a snowy mountain ridge"
+  },
+  {
+    "id": "andes-team",
+    "title": "A steady pace in the high Andes",
+    "camp": "Aconcagua Preparation Expedition",
+    "location": "Mendoza, Argentina",
+    "region": "South America",
+    "year": 2024,
+    "difficulty": "Advanced",
+    "summary": "A small training group used staged day hikes and pack carries to practice pacing, layering and team check-ins. Their final lesson was that a flexible plan and a well-timed turnaround are expedition skills too.",
+    "participant": "Diego Alvarez (fictional participant)",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "A mountain valley opening toward high peaks"
+  },
+  {
+    "id": "alpine-hut",
+    "title": "Finding confidence on a hut-to-hut route",
+    "camp": "Alpine Navigation and Trekking Week",
+    "location": "Dolomites, Italy",
+    "region": "Europe",
+    "year": 2025,
+    "difficulty": "Intermediate",
+    "summary": "Participants practiced map reading, weather checks and route alternatives while moving between mountain refuges. A stormy afternoon became an opportunity to revise the next day's plan and learn from local hut staff.",
+    "participant": "Sofia Martin (fictional participant)",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Mountain peaks under a clear evening sky"
+  },
+  {
+    "id": "kilimanjaro-team",
+    "title": "One team, different paces",
+    "camp": "Kilimanjaro Acclimatization Trek",
+    "location": "Kilimanjaro, Tanzania",
+    "region": "Africa",
+    "year": 2023,
+    "difficulty": "Intermediate",
+    "summary": "The group focused on gradual altitude gain, rest and regular wellbeing checks. Participants supported one another through a deliberately measured itinerary, with the guides adjusting the plan as conditions and individual needs changed.",
+    "participant": "Amina Nyerere (fictional participant)",
+    "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "A mountain landscape at sunrise"
+  },
+  {
+    "id": "japan-winter",
+    "title": "Winter skills and careful choices",
+    "camp": "Northern Alps Winter Skills Camp",
+    "location": "Nagano, Japan",
+    "region": "Asia",
+    "year": 2024,
+    "difficulty": "Advanced",
+    "summary": "A winter skills group reviewed snow travel, cold-weather systems and avalanche bulletins with local instructors. When the forecast narrowed their options, the team chose a lower-risk training day and returned with useful practice.",
+    "participant": "Kenji Sato (fictional participant)",
+    "image": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Snow-covered mountain forest"
+  },
+  {
+    "id": "southern-alps",
+    "title": "A weather window shared well",
+    "camp": "Southern Alps Alpine Skills Camp",
+    "location": "Aoraki / Mount Cook, New Zealand",
+    "region": "Oceania",
+    "year": 2025,
+    "difficulty": "Intermediate",
+    "summary": "A small team used a clear weather window for coached movement on alpine terrain, keeping a backup objective ready. Shared route checks and a conservative descent plan made the day a valuable skills milestone.",
+    "participant": "Riley Thompson (fictional participant)",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Alpine ridgelines beyond a broad mountain valley"
+  }
+]

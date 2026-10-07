@@ -103,6 +103,67 @@ For production verification, run `npm run build` and `npm run preview`, then vis
 - The Records map uses an OpenStreetMap embed. The ticker reverse-geocodes permitted browser coordinates through Nominatim and falls back to rounded coordinates.
 - The visitor count is local to a browser, seeded at 1,200, and increments at most once per session. It is not a server-side or global count.
 
+## Clubs, Stories, Gallery, and Latest Updates
+
+Four data-backed features were added to the existing React Router app. The Clubs page reads an international club directory from `src/data/clubs.json`, plots filtered results on an interactive Leaflet map, and keeps the search, region filter, cards, and markers in sync. A card selection pans and zooms to its marker; the browser geolocation control adds a visitor marker only after permission is granted and explains denied or unavailable access. The map uses OpenStreetMap tiles, attribution, and Leaflet rather than a Google Maps key. Pins identify each organization's city/base at city-scale coordinates; they are intended for discovery, not turn-by-turn navigation. Please have the team verify exact office pins against the linked organization contact pages before final submission.
+
+The Success Stories page reads six responsive cards from JSON, supports region and difficulty filters, and expands each card for additional context. All six examples and named participants are explicitly fictional; the page says so. The Gallery uses Unsplash photographs and YouTube's own embedded player for three climbing films, with category tabs, lazy-loaded photos and a keyboard-operable lightbox. Latest items are date-sorted and link to the original source. They combine dated 2026 club activity reports with one 2026 gear preview; activity dates and publication date are identified separately so these reports are not misrepresented as breaking news.
+
+### Feature flowchart
+
+```mermaid
+flowchart TD
+    A[Open Clubs, Stories, Gallery, or Latest] --> B{Select feature}
+    B -->|Clubs| C[Read clubs.json]
+    C --> D[Search or choose region]
+    D --> E[Render matching cards and map markers]
+    E --> F{Select club or location}
+    F -->|Club| G[Highlight card and center marker]
+    F -->|Location| H[Ask browser permission and add visitor marker]
+    B -->|Success Stories| I[Read successStories.json]
+    I --> J[Filter region or difficulty]
+    J --> K[Expand a fictional camp story]
+    B -->|Gallery| L[Read gallery.json]
+    L --> M[Choose All, Photos, or Videos]
+    M --> N{Select media}
+    N -->|Photo| O[Open lightbox; arrow keys navigate; Escape closes]
+    N -->|Video| P[Play publisher-hosted YouTube embed]
+    B -->|Latest| Q[Read and sort latest.json newest first]
+    Q --> R[Open linked source]
+```
+
+### Feature data-flow diagram
+
+```mermaid
+flowchart LR
+    U[Visitor] -->|query and region| CP[Clubs page]
+    CD[(clubs.json)] --> CP
+    CP -->|matching coordinates| LM[Leaflet map]
+    CP -->|matching records| CC[Club cards]
+    LM -->|tiles and map data| OSM[OpenStreetMap]
+    U -->|optional location permission| GEO[Browser Geolocation API]
+    GEO -->|visitor coordinates| LM
+    U -->|filters and selection| SP[Success Stories page]
+    SD[(successStories.json)] --> SP
+    U -->|category, photo click, keys| GP[Gallery page]
+    GD[(gallery.json)] --> GP
+    GP -->|image tile requests| US[Unsplash]
+    GP -->|video playback| YT[YouTube embedded player]
+    U -->|open a source| LP[Latest page]
+    LD[(latest.json)] -->|date-sort| LP
+    LP -->|source links| SRC[Original publishers]
+```
+
+### Content and media sources
+
+- **Club organizations:** official sites and contact/about pages linked in each `src/data/clubs.json` record: [American Alpine Club](https://americanalpineclub.org/contact), [Alpine Club of Canada](https://alpineclubofcanada.ca/contact/), [The Mountaineers](https://www.mountaineers.org/about), [British Mountaineering Council](https://www.thebmc.co.uk/about-us), [The Alpine Club](https://www.alpine-club.org.uk/about-us), [Austrian Alpine Club](https://www.alpenverein.at/portal/Der-Club/Service/Kontakt.php), [Swiss Alpine Club](https://www.sac-cas.ch/en/the-sac/contact/), [FFCAM](https://www.ffcam.fr/contact.html), [Japanese Alpine Club](https://jac1.or.jp/), [Korea Alpine Federation](https://www.kaf.or.kr/), [New Zealand Alpine Club](https://alpineclub.org.nz/contact/), [Mountain Club of South Africa](https://www.mcsa.org.za/), and [Club Andino Bariloche](https://www.clubandino.org/). Coordinates use the named city/base and are approximate city-scale positions, not verified office-door locations.
+- **Map:** [Leaflet](https://leafletjs.com/) with [OpenStreetMap](https://www.openstreetmap.org/copyright) tiles. OSM copyright attribution is displayed on the map; no API key or `.env` setting is needed.
+- **Photographs:** the photo records, cards, and backgrounds use image URLs from Unsplash; the applicable [Unsplash License](https://unsplash.com/license) allows reuse. Image IDs and page captions/alt text are maintained in `src/data/gallery.json`, `src/data/clubs.json`, `src/data/successStories.json`, and `src/data/latest.json`.
+- **Videos:** [Free Solo — National Geographic](https://www.youtube.com/watch?v=urRVZ4SW7WU), [Breathtaking: K2 — Eddie Bauer](https://www.youtube.com/watch?v=cvFt2Xcuois), and [Link Sar — EpicTV](https://www.youtube.com/watch?v=ViSXePkt7t8). Each is embedded from its YouTube publisher rather than copied or redistributed; YouTube's [terms](https://www.youtube.com/t/terms) apply.
+- **Latest sources:** The Mountaineers' [September 2026](https://www.mountaineers.org/blog/top-ten-trip-reports-september-2026), [August 2026](https://www.mountaineers.org/blog/top-ten-trip-reports-august-2026), and [July 2026](https://www.mountaineers.org/blog/top-ten-trip-reports-july-2026) trip report roundups; Outside's [2026 gear preview](https://www.outsideonline.com/outdoor-gear/2026-outdoor-gear-preview/), updated November 18, 2025. Activity reports are dated by the activity described, not publication date.
+
+**Team hand-off:** Leaflet/OpenStreetMap was selected because it avoids a paid/API-key setup and suits this directory. Please confirm the choice with the instructor and share this report's source list with Banji/the team before submission; I cannot contact them directly from the project workspace.
+
 ## Submission Checklist
 
 - [x] React source, routes, JSON content, and installation steps.
