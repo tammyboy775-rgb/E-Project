@@ -12,7 +12,7 @@ export default function Header({ nav, phone, brand, visitorSeed }) {
 
   return (
     <header
-      className="site-header"
+      className={`site-header ${menuOpen ? 'site-header--menu-open' : ''}`}
       onKeyDownCapture={(event) => {
         if (event.key === 'Escape') {
           setMenuOpen(false)
@@ -83,7 +83,9 @@ export default function Header({ nav, phone, brand, visitorSeed }) {
           aria-controls="main-navigation"
           aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
           onClick={() => setMenuOpen((open) => !open)}
-        ><span /><span /><span /></button>
+        >
+          {menuOpen ? <span className="menu-toggle-close" aria-hidden="true">×</span> : <><span /><span /><span /></>}
+        </button>
 
         <div className="header-tools">
           <a href={`tel:${phone.replace(/\s+/g, '')}`} className="header-phone">{phone}</a>
