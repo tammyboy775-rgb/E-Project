@@ -344,6 +344,10 @@
 }
 
 @media (max-width: 860px) {
+  .site-header {
+    position: relative;
+  }
+
   .header-inner {
     position: relative;
     min-height: 68px;
