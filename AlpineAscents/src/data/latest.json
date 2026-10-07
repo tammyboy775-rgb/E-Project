@@ -1,0 +1,86 @@
+[
+  {
+    "id": "prusik-peak-route-report",
+    "title": "Route notes from Prusik Peak's West Ridge",
+    "date": "2026-09-18",
+    "category": "Climbing report",
+    "summary": "A Mountaineers intermediate-climb team reported on the West Ridge, including a route-finding lesson about avoiding rope drag on the first pitch. The club's report emphasizes sharing specific, experience-based route observations.",
+    "image": "https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1000&q=80",
+    "imageAlt": "A climber moving on steep mountain terrain",
+    "source": "https://www.mountaineers.org/blog/top-ten-trip-reports-september-2026",
+    "sourceLabel": "The Mountaineers — September 2026 trip reports",
+    "imageLicense": "Unsplash License"
+  },
+  {
+    "id": "vesper-wolf-scramble",
+    "title": "A late-season scramble includes a lost-hiker assist",
+    "date": "2026-09-19",
+    "category": "Safety and community",
+    "summary": "A Mountaineers report describes a Vesper and Wolf Peaks scramble and helping a lost hiker reconnect with their group during the descent. The report is a timely reminder to check in with other parties and offer appropriate assistance.",
+    "image": "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1000&q=80",
+    "imageAlt": "Hikers traveling together on a mountain trail",
+    "source": "https://www.mountaineers.org/blog/top-ten-trip-reports-september-2026",
+    "sourceLabel": "The Mountaineers — September 2026 trip reports",
+    "imageLicense": "Unsplash License"
+  },
+  {
+    "id": "meadow-watch",
+    "title": "Volunteer outings contribute to alpine meadow monitoring",
+    "date": "2026-08-20",
+    "category": "Conservation",
+    "summary": "A MeadoWatch outing at Mount Rainier's Reflection Lakes contributed observations to ongoing work tracking alpine meadow wildflowers. The club report connects recreation with long-term monitoring of mountain ecosystems.",
+    "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1000&q=80",
+    "imageAlt": "An alpine valley and surrounding mountain slopes",
+    "source": "https://www.mountaineers.org/blog/top-ten-trip-reports-august-2026",
+    "sourceLabel": "The Mountaineers — August 2026 trip reports",
+    "imageLicense": "Unsplash License"
+  },
+  {
+    "id": "smoke-aware-climb",
+    "title": "Air quality changed the plan for a glacier climb",
+    "date": "2026-08-16",
+    "category": "Weather and safety",
+    "summary": "The club's Sloan Peak report notes that the climb was rescheduled after poor air quality earlier in the month. The team's decision is a practical example of using smoke and air-quality information when deciding whether to travel.",
+    "image": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1000&q=80",
+    "imageAlt": "Clouds and changing weather over a mountain ridge",
+    "source": "https://www.mountaineers.org/blog/top-ten-trip-reports-august-2026",
+    "sourceLabel": "The Mountaineers — August 2026 trip reports",
+    "imageLicense": "Unsplash License"
+  },
+  {
+    "id": "haute-route-group",
+    "title": "A member group completes the Walker's Haute Route",
+    "date": "2026-08-15",
+    "category": "Expedition",
+    "summary": "A Global Adventures group documented a hut-to-hut journey from Mont Blanc toward the Matterhorn between August 15 and 31. Its report shares route impressions from one of the Alps' best-known long-distance treks.",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80",
+    "imageAlt": "A mountain lake beneath a high alpine range",
+    "source": "https://www.mountaineers.org/blog/top-ten-trip-reports-august-2026",
+    "sourceLabel": "The Mountaineers — August 2026 trip reports",
+    "imageLicense": "Unsplash License"
+  },
+  {
+    "id": "glacier-traverse",
+    "title": "A North Cascades glacier traverse shares team lessons",
+    "date": "2026-07-03",
+    "category": "Climbing report",
+    "summary": "A Mountaineers team reported on a multi-day Inspiration–McAllister–Klawatti Ice Cap traverse. The published account describes changing the objective as fatigue and illness affected the group, and shortening the traverse accordingly.",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80",
+    "imageAlt": "Snow-covered mountain peaks above a glacier",
+    "source": "https://www.mountaineers.org/blog/top-ten-trip-reports-july-2026",
+    "sourceLabel": "The Mountaineers — July 2026 trip reports",
+    "imageLicense": "Unsplash License"
+  },
+  {
+    "id": "durable-down-parka",
+    "title": "A climber-focused durable down parka is announced for 2026",
+    "date": "2025-11-18",
+    "category": "Gear and clothing",
+    "summary": "Outside's Spring 2026 gear preview describes Patagonia's Durable Down Parka as part of its Free Wall kit for climbers. The article highlights its tear-resistant face fabric, 800-fill down and intended use in cold outdoor conditions.",
+    "image": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1000&q=80",
+    "imageAlt": "Snow-covered trees in a winter mountain forest",
+    "source": "https://www.outsideonline.com/outdoor-gear/2026-outdoor-gear-preview/",
+    "sourceLabel": "Outside — 2026 outdoor gear preview",
+    "imageLicense": "Unsplash License"
+  }
+]

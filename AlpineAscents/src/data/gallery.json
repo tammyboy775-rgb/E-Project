@@ -1,0 +1,167 @@
+[
+  {
+    "id": "alpine-range",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=80",
+    "title": "Above the tree line",
+    "caption": "A chain of high peaks catches the morning light.",
+    "category": "Alpine",
+    "alt": "Snow-covered alpine peaks in morning light",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "starry-summit",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=80",
+    "title": "Night over the summit",
+    "caption": "A starry sky above a rugged mountain summit.",
+    "category": "Alpine",
+    "alt": "Star-filled night sky over a mountain summit",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "trail-team",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1800&q=80",
+    "title": "Moving together",
+    "caption": "A group follows a mountain trail through open country.",
+    "category": "People",
+    "alt": "A group of hikers walking together along a mountain trail",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "tent-camp",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=1800&q=80",
+    "title": "Camp at dusk",
+    "caption": "A tent rests in a quiet mountain landscape.",
+    "category": "Camp",
+    "alt": "A tent pitched in a mountain landscape",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "mountain-lake",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=80",
+    "title": "Still water",
+    "caption": "A high lake reflects the surrounding mountain range.",
+    "category": "Landscape",
+    "alt": "A mountain lake reflecting peaks and forest",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "sunrise-valley",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=80",
+    "title": "First light",
+    "caption": "Dawn reaches into a broad mountain valley.",
+    "category": "Landscape",
+    "alt": "Mountain valley illuminated by sunrise",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "mountain-climber",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1800&q=80",
+    "title": "On the route",
+    "caption": "A climber moves carefully on steep mountain terrain.",
+    "category": "People",
+    "alt": "A climber ascending a steep mountain route",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "cloud-ridge",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1800&q=80",
+    "title": "Weather on the ridge",
+    "caption": "Cloud moves across a rugged alpine skyline.",
+    "category": "Alpine",
+    "alt": "Clouds moving across a rugged mountain ridge",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "open-country",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80",
+    "title": "Wide horizons",
+    "caption": "An open mountain landscape invites a slower pace.",
+    "category": "Landscape",
+    "alt": "Wide mountain landscape beneath an open sky",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "snow-forest",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1800&q=80",
+    "title": "Winter approach",
+    "caption": "Snow settles among the trees on a mountain approach.",
+    "category": "Winter",
+    "alt": "A snow-covered forest on a mountain",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "mountain-pass",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1800&q=80",
+    "title": "Across the pass",
+    "caption": "A mountain pass opens into the next valley.",
+    "category": "Landscape",
+    "alt": "Mountain ridges and a green alpine valley",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "sunlit-peaks",
+    "type": "photo",
+    "src": "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1800&q=80",
+    "title": "Sunlit peaks",
+    "caption": "Late afternoon light traces the mountain contours.",
+    "category": "Landscape",
+    "alt": "Sunlight falling across a range of mountains",
+    "license": "Unsplash License",
+    "source": "https://unsplash.com/license"
+  },
+  {
+    "id": "alpine-safety-video",
+    "type": "video",
+    "src": "https://www.youtube-nocookie.com/embed/urRVZ4SW7WU",
+    "title": "Free Solo — official trailer",
+    "caption": "A trailer for the climbing documentary Free Solo.",
+    "category": "Video",
+    "alt": "Embedded trailer for the climbing documentary Free Solo",
+    "license": "YouTube standard license; embedded from National Geographic",
+    "source": "https://www.youtube.com/watch?v=urRVZ4SW7WU"
+  },
+  {
+    "id": "mountaineering-film",
+    "type": "video",
+    "src": "https://www.youtube-nocookie.com/embed/cvFt2Xcuois",
+    "title": "Breathtaking: K2 — The World's Most Dangerous Mountain",
+    "caption": "Eddie Bauer's documentary on climbing on K2.",
+    "category": "Video",
+    "alt": "Embedded K2 mountaineering documentary",
+    "license": "YouTube standard license; embedded from Eddie Bauer",
+    "source": "https://www.youtube.com/watch?v=cvFt2Xcuois"
+  },
+  {
+    "id": "mountain-expedition-video",
+    "type": "video",
+    "src": "https://www.youtube-nocookie.com/embed/ViSXePkt7t8",
+    "title": "Link Sar: The Last Great Unclimbed Mountain",
+    "caption": "EpicTV follows an expedition to a high mountain in Pakistan.",
+    "category": "Video",
+    "alt": "Embedded Link Sar alpine expedition film",
+    "license": "YouTube standard license; embedded from EpicTV",
+    "source": "https://www.youtube.com/watch?v=ViSXePkt7t8"
+  }
+]
