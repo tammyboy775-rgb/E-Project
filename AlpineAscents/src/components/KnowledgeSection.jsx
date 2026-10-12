@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './KnowledgeSection.css'
 
-// JSON page shape: { title, intro, heroImage?, sections: [{ heading, text, image, alt, imageCredit?, facts?, details?, steps? }], modules?, sources?, nextTopic }. Modules are reusable data-driven blocks: timeline, cards, table, notice, video, hazards, or records.
+// JSON page shape: { title, intro, heroImage?, heroAlt?, heroCredit?, sections: [{ heading, text, image, alt, imageCredit?, facts?, details?, steps? }], modules?, sources?, nextTopic }. Card modules may also include imageCredit on each card. Modules are reusable data-driven blocks: timeline, cards, table, notice, video, hazards, or records.
 function slugify(value) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 }
@@ -114,7 +114,10 @@ function ContentModule({ module }) {
         <div className="knowledge-cards">
           {module.cards.map((card) => (
             <article className="knowledge-card" key={card.title}>
-              <img src={card.image} alt={card.alt} loading="lazy" />
+              <figure className="knowledge-card__image">
+                <img src={card.image} alt={card.alt} loading="lazy" />
+                {card.imageCredit && <figcaption>Image: <a href={card.imageCredit.url} target="_blank" rel="noreferrer">{card.imageCredit.label}</a></figcaption>}
+              </figure>
               <div className="knowledge-card__body">
                 <h3>{card.title}</h3><p>{card.description}</p>
                 {card.terrain && <p><strong>Typical terrain:</strong> {card.terrain}</p>}
@@ -189,7 +192,7 @@ function ContentModule({ module }) {
   return null
 }
 
-export default function KnowledgeSection({ title, intro, heroImage, heroAlt, sections = [], modules = [], sources = [], nextTopic }) {
+export default function KnowledgeSection({ title, intro, heroImage, heroAlt, heroCredit, sections = [], modules = [], sources = [], nextTopic }) {
   const contents = [
     ...sections.map((section) => ({ label: section.heading, id: slugify(section.heading) })),
     ...modules.map((module) => ({ label: module.heading, id: module.id || slugify(module.heading) })),
@@ -201,6 +204,7 @@ export default function KnowledgeSection({ title, intro, heroImage, heroAlt, sec
         <div className="container knowledge-hero__inner">
           <p className="eyebrow">Alpine field guide</p><h1>{title}</h1>
           {heroAlt && <span className="knowledge-hero__image-description">{heroAlt}</span>}
+          {heroCredit && <span className="knowledge-hero__image-description">Photo: <a href={heroCredit.url} target="_blank" rel="noreferrer">{heroCredit.label}</a></span>}
         </div>
       </header>
 

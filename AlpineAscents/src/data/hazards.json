@@ -1,7 +1,9 @@
 {
   "title": "Mountain hazards",
   "intro": "Mountain risk comes from both conditions and decisions. The labels below are general teaching cues, not a forecast or an individual risk assessment; local conditions can change quickly. Turn back early when the team's safety margin is shrinking.",
-  "heroImage": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Avalanche_debris%2C_Geal_Charn_near_Pattack_-_geograph.org.uk_-_1779792.jpg",
+  "heroAlt": "Avalanche debris below Geal Charn in the Scottish mountains",
+  "heroCredit": { "label": "Jim Barton — CC BY-SA 2.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Avalanche_debris,_Geal_Charn_near_Pattack_-_geograph.org.uk_-_1779792.jpg" },
   "sections": [
     {
       "heading": "Acute mountain sickness (AMS)",
@@ -11,9 +13,9 @@
         { "label": "What to do", "text": "Stop ascent, rest and monitor closely. Seek medical advice and descend if symptoms worsen or fail to improve." },
         { "label": "Descent matters", "text": "Do not leave a symptomatic person alone or continue upward to meet a schedule." }
       ],
-      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1100&q=80",
-      "alt": "High mountain terrain where altitude illness can occur",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1100&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Everest%2C_Himalayas.jpg/1280px-Everest%2C_Himalayas.jpg",
+      "alt": "Mount Everest and the high-altitude Himalayan terrain where altitude illness can occur",
+      "imageCredit": { "label": "Vyacheslav Argenberg — CC BY 4.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Everest,_Himalayas.jpg" }
     },
     {
       "heading": "High-altitude pulmonary edema (HAPE)",
@@ -23,9 +25,9 @@
         { "label": "What to do", "text": "Urgently descend with assistance and seek emergency medical care; oxygen may be used while arranging evacuation." },
         { "label": "Descent matters", "text": "Do not wait for symptoms to resolve at the same altitude or allow the person to descend alone." }
       ],
-      "image": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1100&q=80",
-      "alt": "Storm clouds moving across high mountain peaks",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1100&q=80" },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Climbers_Crossing_Crevasse_Mt._rainier.jpg",
+      "alt": "Roped climbers crossing a crevasse on Mount Rainier at high altitude",
+      "imageCredit": { "label": "G310ScottS — CC BY-SA 3.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Climbers_Crossing_Crevasse_Mt._rainier.jpg" },
       "facts": ["Suspected HAPE is a medical emergency.", "Descent and urgent medical evaluation are essential."]
     },
     {
@@ -36,9 +38,9 @@
         { "label": "What to do", "text": "Treat as an emergency: arrange immediate assisted descent and emergency medical help." },
         { "label": "Descent matters", "text": "Never wait overnight at altitude for suspected HACE to improve; do not let the person descend unaccompanied." }
       ],
-      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1100&q=80",
-      "alt": "A high, snowbound mountain peak in the Himalaya",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1100&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Everest%2C_Himalayas.jpg/1280px-Everest%2C_Himalayas.jpg",
+      "alt": "Mount Everest above the surrounding high Himalayan terrain",
+      "imageCredit": { "label": "Vyacheslav Argenberg — CC BY 4.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Everest,_Himalayas.jpg" }
     },
     {
       "heading": "Hypothermia",
@@ -48,9 +50,9 @@
         { "label": "Response", "text": "Get shelter, replace wet layers if possible, insulate from ground and wind, handle gently, and arrange medical help." },
         { "label": "Prevention", "text": "Use suitable layers, eat and drink regularly, keep dry, monitor partners and respond early to cooling." }
       ],
-      "image": "https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=1100&q=80",
-      "alt": "Cold, icy mountain conditions",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=1100&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg/1280px-Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg",
+      "alt": "An ice climber exposed to cold conditions on a steep alpine route",
+      "imageCredit": { "label": "Masa Sakano — CC BY-SA 2.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg" }
     },
     {
       "heading": "Frostbite",
@@ -60,9 +62,9 @@
         { "label": "Response", "text": "Prevent further exposure, protect the injured area and seek medical care; avoid rubbing or walking on frozen feet." },
         { "label": "Prevention", "text": "Use dry insulating layers, mittens, face protection and regular buddy checks; limit exposure and keep circulation unrestrictive." }
       ],
-      "image": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1100&q=80",
-      "alt": "A cold winter mountain landscape",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1100&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flo_dans_Juvs%C3%B8yla_%C3%A0_Rjukan%2C_Norv%C3%A8ge.jpg/1280px-Flo_dans_Juvs%C3%B8yla_%C3%A0_Rjukan%2C_Norv%C3%A8ge.jpg",
+      "alt": "An ice climber ascending a frozen waterfall in winter",
+      "imageCredit": { "label": "Valentin Chapuis — CC BY-SA 3.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Flo_dans_Juvs%C3%B8yla_%C3%A0_Rjukan,_Norv%C3%A8ge.jpg" }
     }
   ],
   "modules": [
@@ -103,7 +105,7 @@
     { "label": "UIAA Medical Commission — mountain medicine and altitude resources", "url": "https://www.theuiaa.org/medical-advice/" },
     { "label": "American Avalanche Association — education and avalanche resources", "url": "https://www.avalanche.org/" },
     { "label": "National Weather Service — mountain weather and safety resources", "url": "https://www.weather.gov/safety/" },
-    { "label": "Unsplash — image source links are credited below each photograph", "url": "https://unsplash.com/license" }
+    { "label": "Wikimedia Commons — individual image pages and licenses are linked below each photograph", "url": "https://commons.wikimedia.org/" }
   ],
   "nextTopic": { "label": "Records", "href": "/records" }
 }

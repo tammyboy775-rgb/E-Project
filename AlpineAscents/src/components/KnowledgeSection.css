@@ -42,6 +42,12 @@
   font-size: 0.75rem;
 }
 
+.knowledge-hero__image-description a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .knowledge-intro {
   padding-top: 38px;
   padding-bottom: 12px;
@@ -254,10 +260,26 @@
   box-shadow: 0 12px 28px rgba(22, 52, 44, 0.07);
 }
 
-.knowledge-card > img {
+.knowledge-card__image {
+  margin: 0;
+}
+
+.knowledge-card__image img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+.knowledge-card__image figcaption {
+  padding: 7px 12px 0;
+  color: var(--color-muted);
+  font-size: 0.72rem;
+}
+
+.knowledge-card__image a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .knowledge-card__body {

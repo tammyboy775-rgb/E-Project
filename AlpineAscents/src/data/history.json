@@ -1,44 +1,46 @@
 {
   "title": "A brief history of mountaineering",
   "intro": "Mountaineering grew from travel, work, science and local mountain knowledge into a worldwide practice. Its story includes famous first ascents, but also the guides, porters and communities whose expertise made those journeys possible.",
-  "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Everest%2C_Himalayas.jpg/1280px-Everest%2C_Himalayas.jpg",
+  "heroAlt": "Mount Everest rising above the Himalayan range",
+  "heroCredit": { "label": "Vyacheslav Argenberg — CC BY 4.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Everest,_Himalayas.jpg" },
   "sections": [
     {
       "heading": "Early journeys and first ascents",
       "text": "People crossed and lived in mountain regions long before climbing became a named sport. European summit-seeking gained momentum during the Enlightenment, when naturalists and travelers began to study high places. In 1786, Jacques Balmat and Michel-Gabriel Paccard reached the summit of Mont Blanc, an ascent often used to mark the beginning of modern alpinism.",
-      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Snow-covered Alpine peaks rising above a mountain valley",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mannering_-_With_axe_and_rope_in_the_New_Zealand_Alps.djvu/page1-1280px-Mannering_-_With_axe_and_rope_in_the_New_Zealand_Alps.djvu.jpg",
+      "alt": "Title page of Guy Mannering's historical mountaineering account With Axe and Rope in the New Zealand Alps",
+      "imageCredit": { "label": "Guy Mannering — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Mannering_-_With_axe_and_rope_in_the_New_Zealand_Alps.djvu" },
       "facts": ["Mont Blanc's 1786 ascent was made by Balmat and Paccard.", "Mountain regions were already home to skilled residents, guides and route-finders."]
     },
     {
       "heading": "The birth of modern alpinism",
       "text": "The first ascent of Mont Blanc inspired further exploration of the Alps. Climbers developed route-finding, rope use and glacier travel while relying on local guides and porters. The Alpine Club was founded in London in 1857, helping establish mountaineering as an organized pursuit; clubs and journals helped climbers share accounts and methods.",
-      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Sharp mountain summit catching the last light of day",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg/1280px-Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg",
+      "alt": "A climber ascending a steep ice pitch on Mont Blanc du Tacul",
+      "imageCredit": { "label": "Masa Sakano — CC BY-SA 2.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg" }
     },
     {
       "heading": "The Golden Age of Alpinism",
       "text": "The years commonly called the Golden Age of Alpinism culminated in the first ascents of many major Alpine summits. Edward Whymper's party reached the Matterhorn on 14 July 1865; four members died in the descent. The tragedy became a lasting reminder that a summit is only part of a climb and that risk cannot be removed by ambition or experience.",
-      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Rugged mountain ridgeline and high alpine terrain",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Whymper_-_The_Ascent_of_the_Matterhorn.djvu/page1-1280px-Whymper_-_The_Ascent_of_the_Matterhorn.djvu.jpg",
+      "alt": "Title page of Edward Whymper's account of the Matterhorn ascent",
+      "imageCredit": { "label": "Edward Whymper — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Whymper_-_The_Ascent_of_the_Matterhorn.djvu" },
       "facts": ["The Matterhorn was climbed for the first time in 1865.", "Four climbers in Whymper's party died on the descent."]
     },
     {
       "heading": "The Himalayan era and the 8,000-metre peaks",
       "text": "As Alpine summits became better known, expeditions turned to the Himalaya and Karakoram. Annapurna I became the first 8,000-metre peak climbed, on 3 June 1950 by Maurice Herzog and Louis Lachenal. The period that followed saw first ascents of the world's fourteen 8,000-metre peaks, with local high-altitude workers providing essential skill, labor and leadership on many expeditions.",
-      "image": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1200&q=80",
-      "alt": "Clouds gathering around a remote high mountain range",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1200&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg/1280px-A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg",
+      "alt": "Expedition tents clustered at the Kahiltna Glacier base camp",
+      "imageCredit": { "label": "John Pennell — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier,_May_20,_2013_130520-A-SO352-044.jpg" }
     },
     {
       "heading": "Everest and a changing mountain culture",
       "text": "On 29 May 1953, Edmund Hillary and Tenzing Norgay reached Everest's summit as members of a British expedition. Later milestones included the first Everest ascent without supplemental oxygen by Reinhold Messner and Peter Habeler in 1978, and Messner's solo ascent without supplemental oxygen in 1980. Modern mountaineering spans guided expeditions, small teams and independent climbing, while confronting questions of safety, environmental impact and recognition of local expertise.",
-      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
-      "alt": "High mountain landscape with a clear view across distant summits",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Everest%2C_Himalayas.jpg/1280px-Everest%2C_Himalayas.jpg",
+      "alt": "Mount Everest viewed from the surrounding Himalayan mountains",
+      "imageCredit": { "label": "Vyacheslav Argenberg — CC BY 4.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Everest,_Himalayas.jpg" },
       "facts": ["Everest's first confirmed ascent was on 29 May 1953.", "Historical accounts should credit the full expedition and the local teams who supported it."]
     }
   ],
@@ -62,7 +64,7 @@
     { "label": "Encyclopaedia Britannica — Matterhorn", "url": "https://www.britannica.com/place/Matterhorn" },
     { "label": "The Alpine Club — club history and mountaineering resources", "url": "https://www.alpine-club.org.uk/" },
     { "label": "The Himalayan Database — expedition records and historical sources", "url": "https://www.himalayandatabase.com/" },
-    { "label": "Unsplash — image source links are credited below each photograph", "url": "https://unsplash.com/license" }
+    { "label": "Wikimedia Commons — individual image pages and licenses are linked below each photograph", "url": "https://commons.wikimedia.org/" }
   ],
   "nextTopic": { "label": "Types & styles", "href": "/types" }
 }

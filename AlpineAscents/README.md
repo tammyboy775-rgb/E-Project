@@ -36,7 +36,7 @@ The initial design had six legacy pages rendering short text from a single share
 
 ### JSON shape and data flow
 
-Each topic JSON file has `title`, `intro`, `sections`, `modules`, `sources`, and `nextTopic` fields. A section contains `heading`, `text` or `paragraphs`, `image`, `alt`, optional `imageCredit`, `facts`, `details`, and `steps`. Modules are generic data objects with a `type` (`timeline`, `cards`, `table`, `notice`, `video`, `hazards`, or `records`) and the fields needed for that module. Record tables have `columns`, `records`, and an `asOf` statement. This shape is documented in the component source and illustrated in `src/data/history.json` and `src/data/records.json`.
+Each topic JSON file has `title`, `intro`, optional `heroImage`/`heroAlt`/`heroCredit`, `sections`, `modules`, `sources`, and `nextTopic` fields. A section contains `heading`, `text` or `paragraphs`, `image`, `alt`, optional `imageCredit`, `facts`, `details`, and `steps`. Card images can also provide `imageCredit`. Modules are generic data objects with a `type` (`timeline`, `cards`, `table`, `notice`, `video`, `hazards`, or `records`) and the fields needed for that module. Record tables have `columns`, `records`, and an `asOf` statement. This shape is documented in the component source and illustrated in `src/data/history.json` and `src/data/records.json`.
 
 ```mermaid
 flowchart LR
@@ -56,14 +56,14 @@ flowchart LR
 
 ### Sources, image credits, and references
 
-Banji: the factual sources for each topic are listed in the `sources` array of its corresponding JSON file and displayed at the bottom of the page. Every article photograph's descriptive alt text and its direct Unsplash image-source URL are stored with that section; the History page also displays a source credit below each of its five images. Type-card image alt text and the Unsplash license link are in `src/data/types.json`.
+Banji: factual references are listed in each topic JSON file and displayed at the bottom of its page. Image alt text, creator/license attribution, and a link to the source are stored with the relevant image data; the shared template renders credits for hero backgrounds, article sections, and type cards.
 
 - History and first-ascents context: [Himalayan Database](https://www.himalayandatabase.com/), [Alpine Club](https://www.alpine-club.org.uk/), and [Encyclopaedia Britannica: Mont Blanc](https://www.britannica.com/place/Mont-Blanc) and [Matterhorn](https://www.britannica.com/place/Matterhorn).
 - Peak and expedition records: [Himalayan Database](https://www.himalayandatabase.com/), [8000ers.com](https://www.8000ers.com/), [Guinness World Records search](https://www.guinnessworldrecords.com/search?term=Everest), and [Britannica: Everest first ascent](https://www.britannica.com/event/first-ascent-of-Mount-Everest). Records marked as historical milestones are not asserted to be the current category holder; the records page shows its review date and asks readers to recheck time-sensitive claims.
 - Techniques and mountaineering education: [UIAA](https://www.theuiaa.org/), [British Mountaineering Council](https://www.thebmc.co.uk/), [The Mountaineers](https://www.mountaineers.org/), and [The Mountaineers' video library](https://www.youtube.com/@TheMountaineers/videos).
 - Hazards and medical information: [CDC Yellow Book](https://www.cdc.gov/yellow-book/), [UIAA Medical Commission](https://www.theuiaa.org/medical-advice/), and [American Avalanche Association](https://www.avalanche.org/).
 - Shelter and outdoor ethics: [The Mountaineers](https://www.mountaineers.org/) and [Leave No Trace](https://lnt.org/why/7-principles/).
-- Image provider and license: [Unsplash License](https://unsplash.com/license). Direct source URLs and descriptive credits are included in the topic JSON files beside their related images.
+- Image providers and licenses: photographs from [Wikimedia Commons](https://commons.wikimedia.org/) link to their individual file pages and include creator and license credit in the topic JSON. The reusable template displays credits for section images, hero backgrounds, and type cards. Remaining [Unsplash](https://unsplash.com/license) images link to their direct source URLs.
 
 ## Design System
 | Token | Value | Use |
@@ -81,7 +81,7 @@ The main content width is 1200px. Directory cards use three columns on wide scre
 
 - The visitor total is a client-side counter, seeded at 1,200 in `src/data/alpineAscentsData.json`. It is stored per browser and increments once per browser session; it is not a global visitor total.
 - Location requires browser geolocation permission. Reverse lookup uses the OpenStreetMap Nominatim service; coordinates are shown if lookup fails, and `Location unavailable` appears if location access fails or is unsupported.
-- Topic photographs are loaded from Unsplash URLs in the JSON content. Text is authored for this educational project; it is not a substitute for local conditions, qualified instruction, individualized medical advice, or emergency services.
+- Topic photographs are loaded from Wikimedia Commons and Unsplash URLs in the JSON content, with source and license attribution beside each image. Text is authored for this educational project; it is not a substitute for local conditions, qualified instruction, individualized medical advice, or emergency services.
 - External source links and photographs require an internet connection.
 
 See [PROJECT_REPORT.md](PROJECT_REPORT.md) for design notes, diagrams, test data, browser coverage, and the submission checklist. Assumptions are also supplied in [ReadMe.doc](ReadMe.doc).
