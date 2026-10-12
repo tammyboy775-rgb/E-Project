@@ -1,22 +1,24 @@
 {
   "title": "Mountaineering records",
   "intro": "First ascents and climbing records capture particular moments in a changing sport. Definitions matter: route, season, summit verification, use of oxygen and the record-keeping body can affect a claim. Always check the linked source for the latest status.",
-  "heroImage": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Everest%2C_Himalayas.jpg/1280px-Everest%2C_Himalayas.jpg",
+  "heroAlt": "Mount Everest rising above the Himalaya",
+  "heroCredit": { "label": "Vyacheslav Argenberg — CC BY 4.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Everest,_Himalayas.jpg" },
   "sections": [
     {
       "heading": "The fourteen 8,000-metre peaks",
       "text": "The fourteen conventionally recognized mountains above 8,000 metres span the Himalaya and Karakoram. Their first ascents were achieved by international teams over several decades. These records should recognize the expedition members and local high-altitude workers who contributed to each climb.",
-      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
-      "alt": "A panorama of high snow-covered mountain peaks",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Everest%2C_Himalayas.jpg/1280px-Everest%2C_Himalayas.jpg",
+      "alt": "Mount Everest, one of the fourteen conventionally recognized 8,000-metre peaks",
+      "imageCredit": { "label": "Vyacheslav Argenberg — CC BY 4.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Everest,_Himalayas.jpg" },
       "facts": ["There are fourteen conventionally recognized 8,000-metre peaks.", "Peak heights may vary slightly among maps and surveying sources."]
     },
     {
       "heading": "First ascents and changing milestones",
       "text": "The first ascent of a summit is only one kind of achievement. Later milestones include winter ascents, routes without supplemental oxygen, solo climbs and faster completions. Many record claims are time-sensitive and depend on independently checking the route and summit details.",
-      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
-      "alt": "High mountain peaks viewed across a broad landscape",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Sunset_view_of_Everest.jpg/1280px-Sunset_view_of_Everest.jpg",
+      "alt": "A sunset view of Mount Everest",
+      "imageCredit": { "label": "Nir B. Gurung — CC BY-SA 4.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Sunset_view_of_Everest.jpg" }
     }
   ],
   "modules": [
@@ -64,7 +66,7 @@
     { "label": "8000ers.com — specialist archive on the world's 8,000-metre peaks", "url": "https://www.8000ers.com/" },
     { "label": "Guinness World Records — search current Everest and mountaineering records", "url": "https://www.guinnessworldrecords.com/search?term=Everest" },
     { "label": "Encyclopaedia Britannica — first ascent of Everest and mountaineering history", "url": "https://www.britannica.com/event/first-ascent-of-Mount-Everest" },
-    { "label": "Unsplash — image source links are credited below each photograph", "url": "https://unsplash.com/license" }
+    { "label": "Wikimedia Commons — individual image pages and licenses are linked below each photograph", "url": "https://commons.wikimedia.org/" }
   ],
   "nextTopic": { "label": "History", "href": "/history" }
 }

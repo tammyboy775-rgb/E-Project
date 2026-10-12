@@ -1,7 +1,9 @@
 {
   "title": "Sheltering in the mountains",
   "intro": "A shelter should match the forecast, terrain, group, trip length and ability to retreat. No tent, cave or hut makes an exposed location safe in every storm; check local rules and conditions, and leave a plan with someone responsible.",
-  "heroImage": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=1800&q=80",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg/1280px-A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg",
+  "heroAlt": "A tent city at the Kahiltna Glacier base camp",
+  "heroCredit": { "label": "John Pennell — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier,_May_20,_2013_130520-A-SO352-044.jpg" },
   "sections": [
     {
       "heading": "Mountain tents",
@@ -12,9 +14,9 @@
         { "label": "Disadvantages", "text": "Adds weight; can fail in extreme wind or snow, and still needs a safe site and ventilation." },
         { "label": "Basic setup", "text": "Choose protected ground outside hazard runouts, orient for expected wind, secure every anchor and manage condensation." }
       ],
-      "image": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=1100&q=80",
-      "alt": "A small camping tent in a mountain landscape",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=1100&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg/1280px-A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg",
+      "alt": "Expedition tents pitched together on a glacier at Kahiltna base camp",
+      "imageCredit": { "label": "John Pennell — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier,_May_20,_2013_130520-A-SO352-044.jpg" }
     },
     {
       "heading": "Bivouacs and bivy sacks",
@@ -25,9 +27,9 @@
         { "label": "Disadvantages", "text": "Limited comfort and weather protection; moisture management and site selection are critical." },
         { "label": "Basic setup", "text": "Choose the safest available sheltered site, insulate from the ground and protect breathing space from snow." }
       ],
-      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1100&q=80",
-      "alt": "A narrow alpine ridge with sheltered mountain ground",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1100&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/The_Nose_El_Capitan_Camp_5_Hanging_Bivy.webp",
+      "alt": "A climber's hanging bivouac camp on El Capitan",
+      "imageCredit": { "label": "Andy Kirkpatrick — CC BY 4.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:The_Nose_El_Capitan_Camp_5_Hanging_Bivy.webp" }
     },
     {
       "heading": "Snow caves, igloos and trenches",
@@ -38,9 +40,9 @@
         { "label": "Disadvantages", "text": "Construction takes time and energy; collapse, ventilation failure and hazardous snowpack are serious risks." },
         { "label": "Basic setup", "text": "Use a site outside avalanche terrain and follow trained shelter-building practice; maintain ventilation and monitor conditions." }
       ],
-      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1100&q=80",
-      "alt": "Snow-covered mountain terrain in winter",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1100&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Snow_Cave_on_Mount_Hood.jpg",
+      "alt": "A snow cave entrance dug into a snowbank on Mount Hood",
+      "imageCredit": { "label": "Josh Lewis — CC BY-SA 3.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Snow_Cave_on_Mount_Hood.jpg" }
     },
     {
       "heading": "Mountain huts and refuges",
@@ -51,9 +53,9 @@
         { "label": "Disadvantages", "text": "Can be full, closed or inaccessible; comfort and services vary and require advance planning." },
         { "label": "Basic setup", "text": "Confirm booking and opening status, follow hut rules, and retain a contingency plan for a missed arrival." }
       ],
-      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1100&q=80",
-      "alt": "A mountain basin and a remote alpine valley",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1100&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Glecksteinh%C3%BCtte_front_20200121.jpg/1280px-Glecksteinh%C3%BCtte_front_20200121.jpg",
+      "alt": "The Glecksteinhütte mountain refuge in the Swiss Alps",
+      "imageCredit": { "label": "Daniel Kraft — CC BY-SA 3.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Glecksteinh%C3%BCtte_front_20200121.jpg" }
     },
     {
       "heading": "Base camps",
@@ -64,9 +66,9 @@
         { "label": "Disadvantages", "text": "Can become crowded and environmentally damaging; remoteness complicates supply and evacuation." },
         { "label": "Basic setup", "text": "Use established sites and local guidance; plan waste, water, communications and emergency procedures before arrival." }
       ],
-      "image": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1100&q=80",
-      "alt": "High Himalayan-style peaks above a broad expedition valley",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1100&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg/1280px-A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg",
+      "alt": "A large expedition base camp at Kahiltna Glacier",
+      "imageCredit": { "label": "John Pennell — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier,_May_20,_2013_130520-A-SO352-044.jpg" }
     },
     {
       "heading": "High camps",
@@ -77,9 +79,9 @@
         { "label": "Disadvantages", "text": "Cold, wind, altitude illness and objective hazards intensify; camps may be exposed or difficult to evacuate." },
         { "label": "Basic setup", "text": "Follow an expedition plan, monitor health and weather, secure shelter and be prepared to descend rather than push on." }
       ],
-      "image": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1100&q=80",
-      "alt": "High mountain slopes beneath a dark alpine sky",
-      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1100&q=80" }
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Summit_camp_Everest.jpg/1280px-Summit_camp_Everest.jpg",
+      "alt": "A small tent camp high on Mount Everest",
+      "imageCredit": { "label": "Tirthakanji — CC BY-SA 3.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Summit_camp_Everest.jpg" }
     }
   ],
   "modules": [
@@ -106,7 +108,7 @@
     { "label": "British Mountaineering Council — mountain skills and safety", "url": "https://www.thebmc.co.uk/" },
     { "label": "The Alpine Club — mountain resources", "url": "https://www.alpine-club.org.uk/" },
     { "label": "Leave No Trace — outdoor ethics and minimizing impact", "url": "https://lnt.org/why/7-principles/" },
-    { "label": "Unsplash — image source links are credited below each photograph", "url": "https://unsplash.com/license" }
+    { "label": "Wikimedia Commons — individual image pages and licenses are linked below each photograph", "url": "https://commons.wikimedia.org/" }
   ],
   "nextTopic": { "label": "Hazards", "href": "/hazards" }
 }
