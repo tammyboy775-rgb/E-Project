@@ -1,0 +1,113 @@
+{
+  "title": "Mountaineering techniques",
+  "intro": "Sound technique is practiced, checked and matched to the route. The short outlines below are for orientation only: rope systems, glacier travel, rescue and self-arrest require hands-on training with a qualified instructor and current equipment.",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg/1280px-Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg",
+  "heroAlt": "A climber using ice tools on a steep alpine ice route",
+  "heroCredit": { "label": "Masa Sakano — CC BY-SA 2.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg" },
+  "sections": [
+    {
+      "heading": "Rope work and belaying",
+      "text": "Rope teams use different systems for rock, steep snow and glacier travel. Learn a belay method, partner checks, rope management and the limits of each system from an instructor. Inspect equipment and agree on commands before leaving the ground.",
+      "steps": ["Choose a system for the actual terrain and team.", "Check each other's harness, knot, device and attachment points.", "Keep communication clear and reassess when terrain changes."],
+      "image": "https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1000&q=80",
+      "alt": "A climber moving upward on a steep rock route",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1000&q=80" }
+    },
+    {
+      "heading": "Knots",
+      "text": "Climbers learn a small set of knots for joining a rope, tying in, securing a load or building a system. The correct knot depends on the task and rope; dress and inspect every knot, and practice until partners can recognize correct and incorrect forms.",
+      "facts": ["There is no single knot that is appropriate for every task.", "A partner check is essential; a diagram is not a substitute for instruction."],
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80",
+      "alt": "Alpine rock and mountain terrain",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80" }
+    },
+    {
+      "heading": "Crampon use",
+      "text": "Crampons improve purchase on suitable snow and ice but can catch on clothing or gaiters and do not make steep terrain safe by themselves. Learn fitting, walking techniques, tool compatibility and transitions before using them on consequential ground.",
+      "steps": ["Fit and test crampons with the boots before the trip.", "Practice deliberate foot placement on low-angle terrain.", "Remove or secure them when they are not appropriate to the surface."],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg/1280px-Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg",
+      "alt": "A climber wearing crampons on a steep alpine ice pitch",
+      "imageCredit": { "label": "Masa Sakano — CC BY-SA 2.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg" }
+    },
+    {
+      "heading": "Ice-axe use",
+      "text": "An ice axe can support balance or provide security on appropriate snow, but its use depends on slope, snow hardness, exposure and other equipment. Learn how to carry, position and transition with an axe for the terrain from a qualified instructor.",
+      "steps": ["Select an axe appropriate to the route and your reach.", "Practice carrying and changing hands on non-consequential ground.", "Use an axe as part of a trained movement system, not as a guarantee against a fall."],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg/1280px-Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg",
+      "alt": "A climber using ice axes on a steep ice pitch",
+      "imageCredit": { "label": "Masa Sakano — CC BY-SA 2.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Pitch_3_of_Ch%C3%A8r%C3%A9_Couloir_WI4_Mont-Blanc_du_Tacul.jpg" }
+    },
+    {
+      "heading": "Self-arrest",
+      "text": "Self-arrest is an emergency skill intended to stop a slide on suitable snow using an ice axe. It may fail on hard ice, steep terrain or in the presence of obstacles, and must not be treated as protection from a fall. Practice under qualified supervision on a controlled slope and focus first on preventing slips.",
+      "steps": ["Learn the technique with a qualified instructor on a controlled slope.", "Practice only when the instructor has assessed the slope and runout.", "Do not rely on self-arrest where a fall could have serious consequences."],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/U_S_Marine_Corps_Mountain_Warfare_Instructors_conduct_cold-weather_rescue_training_with_Argentine_marines_%288631020%29.jpg/1280px-U_S_Marine_Corps_Mountain_Warfare_Instructors_conduct_cold-weather_rescue_training_with_Argentine_marines_%288631020%29.jpg",
+      "alt": "An Argentine marine sliding down a snowy slope before using a self-arrest technique",
+      "imageCredit": { "label": "Cpl. Samuel Qin, U.S. Marine Corps — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:U_S_Marine_Corps_Mountain_Warfare_Instructors_conduct_cold-weather_rescue_training_with_Argentine_marines_(8631020).jpg" }
+    },
+    {
+      "heading": "Glacier travel",
+      "text": "Crevasses can be hidden by snow bridges and changing light. A trained team plans its route, rope spacing and rescue capability for the glacier, uses appropriate navigation and changes plans when visibility or snow conditions worsen.",
+      "steps": ["Check current route conditions and identify crevasse terrain.", "Travel roped only with a team trained in the selected system.", "Carry and practice with rescue equipment before entering glaciated terrain."],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Climbers_Crossing_Crevasse_Mt._rainier.jpg",
+      "alt": "Mountaineers roped together while crossing a crevasse on Mount Rainier",
+      "imageCredit": { "label": "G310ScottS — CC BY-SA 3.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Climbers_Crossing_Crevasse_Mt._rainier.jpg" }
+    },
+    {
+      "heading": "Basic crevasse-rescue awareness",
+      "text": "A crevasse fall can injure the person and destabilize the remaining team. Rescue involves scene assessment, communication, securing the team, appropriate hauling or outside assistance, and care for the casualty. These steps are complex and cannot safely be taught in a short webpage.",
+      "facts": ["Practice rescue with a qualified guide in a controlled setting.", "Do not approach an unstable snow bridge or edge without an assessed plan.", "Call organized rescue when the team cannot manage the situation safely."],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Five_men_near_a_crevasse_during_search_and_rescue_operation%2C_Mount_Rainier_National_Park%2C_July_1929_%28MOHAI_4401%29.jpg",
+      "alt": "A 1929 search party standing near a crevasse on Mount Rainier",
+      "imageCredit": { "label": "Museum of History & Industry — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Five_men_near_a_crevasse_during_search_and_rescue_operation,_Mount_Rainier_National_Park,_July_1929_(MOHAI_4401).jpg" }
+    },
+    {
+      "heading": "Navigation",
+      "text": "Navigation combines map, compass, terrain reading and a reliable electronic device; no battery-powered tool is infallible. Plan checkpoints, escape routes and decision times before departure, then confirm position rather than following a track blindly.",
+      "steps": ["Study the map and forecast; note landmarks and alternatives.", "Check position at planned points and when conditions change.", "Carry a backup navigation method and know how to use it."],
+      "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=80",
+      "alt": "Mountain valley with a route leading through the landscape",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=80" }
+    },
+    {
+      "heading": "Rappelling",
+      "text": "Rappelling (abseiling) is a technical descent method with serious risks including anchor failure, rope problems and loss of control. Learn anchor assessment, device use, backups, rope retrieval and partner checks in person; never rely on this summary to build or inspect a system.",
+      "facts": ["Use only anchors assessed by a competent climber.", "Check rope length, ends and retrieval plan before descending.", "If uncertain, stop and seek qualified assistance."],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Flickr_-_DVIDSHUB_-_Moutaineering_program_training_%28Image_9_of_20%29.jpg",
+      "alt": "Military mountaineering students practicing rope techniques",
+      "imageCredit": { "label": "DVIDS — CC BY 2.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Flickr_-_DVIDSHUB_-_Moutaineering_program_training_(Image_9_of_20).jpg" }
+    },
+    {
+      "heading": "Acclimatization",
+      "text": "Acclimatization is the body's gradual adjustment to lower oxygen availability at altitude. Ascend gradually, include rest or lower sleeping nights as appropriate, and treat new symptoms seriously. Fitness does not prevent altitude illness, and descent is the key response when serious illness is suspected.",
+      "facts": ["Individual responses vary; prior success at altitude does not guarantee safety.", "Do not continue upward with worsening altitude symptoms.", "Use a clinician's advice for preventive medication and medical planning."],
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80",
+      "alt": "A high mountain environment above a broad valley",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80" }
+    }
+  ],
+  "modules": [
+    {
+      "type": "notice",
+      "heading": "Safety notice",
+      "tone": "critical",
+      "text": "Reading the information is not a substitute for professional mountaineering training. Rope systems, glacier travel, crevasse rescue, self-arrest and rappelling can be life-critical. Learn and practice them with a qualified instructor before relying on them outdoors."
+    },
+    {
+      "type": "video",
+      "heading": "Learn from qualified instructors",
+      "text": "Use an instructor-led course for practical demonstrations and supervised practice. The Mountaineers publishes outdoor-skills videos; choose instruction appropriate to your terrain and experience.",
+      "linkLabel": "Watch The Mountaineers' instructional videos",
+      "url": "https://www.youtube.com/@TheMountaineers/videos"
+    }
+  ],
+  "sources": [
+    { "label": "The Mountaineers — instructional video library", "url": "https://www.youtube.com/@TheMountaineers/videos" },
+    { "label": "British Mountaineering Council — skills and safety", "url": "https://www.thebmc.co.uk/" },
+    { "label": "UIAA — international mountaineering safety and training resources", "url": "https://www.theuiaa.org/" },
+    { "label": "CDC Yellow Book — high-altitude travel and illness guidance", "url": "https://www.cdc.gov/yellow-book/" },
+    { "label": "Wikimedia Commons — individual image pages and licenses are linked below the photographs", "url": "https://commons.wikimedia.org/" },
+    { "label": "Unsplash — image source links are credited below each photograph", "url": "https://unsplash.com/license" }
+  ],
+  "nextTopic": { "label": "Sheltering", "href": "/sheltering" }
+}

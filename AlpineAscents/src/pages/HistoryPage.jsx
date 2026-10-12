@@ -1,5 +1,1 @@
-import TopicPage from './TopicPage'
-
-export default function HistoryPage() {
-  return <TopicPage pageKey="history" />
-}
+export { default } from './History/HistoryPage'

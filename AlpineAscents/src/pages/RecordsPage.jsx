@@ -1,5 +1,1 @@
-import TopicPage from './TopicPage'
-
-export default function RecordsPage() {
-  return <TopicPage pageKey="records" />
-}
+export { default } from './Records/RecordsPage'

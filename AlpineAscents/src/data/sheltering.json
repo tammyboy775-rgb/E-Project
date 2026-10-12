@@ -1,0 +1,114 @@
+{
+  "title": "Sheltering in the mountains",
+  "intro": "A shelter should match the forecast, terrain, group, trip length and ability to retreat. No tent, cave or hut makes an exposed location safe in every storm; check local rules and conditions, and leave a plan with someone responsible.",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg/1280px-A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg",
+  "heroAlt": "A tent city at the Kahiltna Glacier base camp",
+  "heroCredit": { "label": "John Pennell — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier,_May_20,_2013_130520-A-SO352-044.jpg" },
+  "sections": [
+    {
+      "heading": "Mountain tents",
+      "text": "Four-season tents are designed for wind, cold and snow loading better than lightweight summer models, but performance depends on design, condition, site and correct pitching. Select a protected, legal campsite away from avalanche paths, cornices, rockfall and water channels.",
+      "details": [
+        { "label": "When used", "text": "Overnight camps on treks, alpine routes and expeditions when a portable enclosed shelter is appropriate." },
+        { "label": "Advantages", "text": "Reusable, relatively quick to establish, and protection from wind, precipitation and insects." },
+        { "label": "Disadvantages", "text": "Adds weight; can fail in extreme wind or snow, and still needs a safe site and ventilation." },
+        { "label": "Basic setup", "text": "Choose protected ground outside hazard runouts, orient for expected wind, secure every anchor and manage condensation." }
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg/1280px-A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg",
+      "alt": "Expedition tents pitched together on a glacier at Kahiltna base camp",
+      "imageCredit": { "label": "John Pennell — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier,_May_20,_2013_130520-A-SO352-044.jpg" }
+    },
+    {
+      "heading": "Bivouacs and bivy sacks",
+      "text": "A planned bivouac is a minimal overnight stop; a bivy sack adds weather protection around a sleeping bag, while a bivy shelter offers more structure. Both suit climbers prioritizing low weight or facing an unplanned delay, but offer limited room and can expose users to condensation, wind and cold.",
+      "details": [
+        { "label": "When used", "text": "Short alpine routes, planned lightweight overnights or emergency delays when retreat is not immediately possible." },
+        { "label": "Advantages", "text": "Low weight and small packed size; a bivy can be used where pitching a tent is impractical." },
+        { "label": "Disadvantages", "text": "Limited comfort and weather protection; moisture management and site selection are critical." },
+        { "label": "Basic setup", "text": "Choose the safest available sheltered site, insulate from the ground and protect breathing space from snow." }
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/The_Nose_El_Capitan_Camp_5_Hanging_Bivy.webp",
+      "alt": "A climber's hanging bivouac camp on El Capitan",
+      "imageCredit": { "label": "Andy Kirkpatrick — CC BY 4.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:The_Nose_El_Capitan_Camp_5_Hanging_Bivy.webp" }
+    },
+    {
+      "heading": "Snow caves, igloos and trenches",
+      "text": "Snow shelters can provide insulation when suitable snow is available and builders have trained for the task. Snow conditions and terrain vary, and excavation can cause collapse, burial or suffocation. A snow shelter is not an improvised substitute for a tent without training and careful ventilation.",
+      "details": [
+        { "label": "When used", "text": "In suitable snow conditions, typically by people with practice and an appropriate reason to build one." },
+        { "label": "Advantages", "text": "Snow can insulate from wind and cold; a built shelter may be quieter and more stable than an exposed bivouac." },
+        { "label": "Disadvantages", "text": "Construction takes time and energy; collapse, ventilation failure and hazardous snowpack are serious risks." },
+        { "label": "Basic setup", "text": "Use a site outside avalanche terrain and follow trained shelter-building practice; maintain ventilation and monitor conditions." }
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Snow_Cave_on_Mount_Hood.jpg",
+      "alt": "A snow cave entrance dug into a snowbank on Mount Hood",
+      "imageCredit": { "label": "Josh Lewis — CC BY-SA 3.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Snow_Cave_on_Mount_Hood.jpg" }
+    },
+    {
+      "heading": "Mountain huts and refuges",
+      "text": "Huts range from staffed refuges to basic emergency shelters. Reservations, access rules, services and seasonal opening vary, so check directly with the hut operator. A refuge is not a guarantee of space or rescue, and busy huts can require carrying backup food and shelter.",
+      "details": [
+        { "label": "When used", "text": "Established routes with a hut network, especially where weather or terrain makes a fixed shelter useful." },
+        { "label": "Advantages", "text": "Reduces carried shelter weight and may provide beds, meals, water or local route information." },
+        { "label": "Disadvantages", "text": "Can be full, closed or inaccessible; comfort and services vary and require advance planning." },
+        { "label": "Basic setup", "text": "Confirm booking and opening status, follow hut rules, and retain a contingency plan for a missed arrival." }
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Glecksteinh%C3%BCtte_front_20200121.jpg/1280px-Glecksteinh%C3%BCtte_front_20200121.jpg",
+      "alt": "The Glecksteinhütte mountain refuge in the Swiss Alps",
+      "imageCredit": { "label": "Daniel Kraft — CC BY-SA 3.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Glecksteinh%C3%BCtte_front_20200121.jpg" }
+    },
+    {
+      "heading": "Base camps",
+      "text": "A base camp is a relatively established staging area used for acclimatization, rest, communication and expedition logistics. It should be located with attention to avalanches, rockfall, flooding, sanitation, waste and the needs of nearby communities.",
+      "details": [
+        { "label": "When used", "text": "Longer remote expeditions where a stable operations point supports multiple trips to higher terrain." },
+        { "label": "Advantages", "text": "Offers a place to rest, organize supplies and coordinate with the team over an extended trip." },
+        { "label": "Disadvantages", "text": "Can become crowded and environmentally damaging; remoteness complicates supply and evacuation." },
+        { "label": "Basic setup", "text": "Use established sites and local guidance; plan waste, water, communications and emergency procedures before arrival." }
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg/1280px-A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier%2C_May_20%2C_2013_130520-A-SO352-044.jpg",
+      "alt": "A large expedition base camp at Kahiltna Glacier",
+      "imageCredit": { "label": "John Pennell — public domain (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:A_tent_city_is_in_place_at_the_National_Park_Service%27s_base_camp_on_Kahiltna_Glacier,_May_20,_2013_130520-A-SO352-044.jpg" }
+    },
+    {
+      "heading": "High camps",
+      "text": "High camps are temporary staging points above base camp, used to support acclimatization or an ascent. Exposure, altitude and weather make them more demanding; camp placement and any fixed equipment must be planned by experienced teams for the specific route.",
+      "details": [
+        { "label": "When used", "text": "On high-altitude objectives where the itinerary and route conditions call for intermediate camps." },
+        { "label": "Advantages", "text": "Can break a long ascent into stages and provide a planned place to rest or wait for conditions." },
+        { "label": "Disadvantages", "text": "Cold, wind, altitude illness and objective hazards intensify; camps may be exposed or difficult to evacuate." },
+        { "label": "Basic setup", "text": "Follow an expedition plan, monitor health and weather, secure shelter and be prepared to descend rather than push on." }
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Summit_camp_Everest.jpg/1280px-Summit_camp_Everest.jpg",
+      "alt": "A small tent camp high on Mount Everest",
+      "imageCredit": { "label": "Tirthakanji — CC BY-SA 3.0 (Wikimedia Commons)", "url": "https://commons.wikimedia.org/wiki/File:Summit_camp_Everest.jpg" }
+    }
+  ],
+  "modules": [
+    {
+      "type": "table",
+      "heading": "Choosing a shelter",
+      "columns": [
+        { "key": "shelter", "label": "Shelter" },
+        { "key": "best", "label": "Best suited to" },
+        { "key": "benefit", "label": "Main advantage" },
+        { "key": "limit", "label": "Main limitation" }
+      ],
+      "rows": [
+        { "shelter": "Mountain tent", "best": "Planned overnight camps", "benefit": "Versatile, enclosed protection", "limit": "Weight and exposure to severe weather" },
+        { "shelter": "Bivy / bivy sack", "best": "Lightweight or constrained stops", "benefit": "Low weight, compact", "limit": "Limited comfort and weather margin" },
+        { "shelter": "Snow shelter", "best": "Suitable snow with trained builders", "benefit": "Insulating and wind-sheltered", "limit": "Collapse, ventilation and avalanche risks" },
+        { "shelter": "Hut / refuge", "best": "Established routes with open huts", "benefit": "Reduces carried shelter", "limit": "Availability and services vary" },
+        { "shelter": "Base camp", "best": "Long, remote expeditions", "benefit": "Logistics and rest point", "limit": "Environmental impact and remoteness" },
+        { "shelter": "High camp", "best": "Planned high-altitude routes", "benefit": "Staging for higher terrain", "limit": "Severe exposure and altitude" }
+      ]
+    }
+  ],
+  "sources": [
+    { "label": "British Mountaineering Council — mountain skills and safety", "url": "https://www.thebmc.co.uk/" },
+    { "label": "The Alpine Club — mountain resources", "url": "https://www.alpine-club.org.uk/" },
+    { "label": "Leave No Trace — outdoor ethics and minimizing impact", "url": "https://lnt.org/why/7-principles/" },
+    { "label": "Wikimedia Commons — individual image pages and licenses are linked below each photograph", "url": "https://commons.wikimedia.org/" }
+  ],
+  "nextTopic": { "label": "Hazards", "href": "/hazards" }
+}
