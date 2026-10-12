@@ -5,26 +5,26 @@ import './ReviewsPage.css'
 
 export default function ReviewsPage() {
   const [region, setRegion] = useState('All regions')
-  const [difficulty, setDifficulty] = useState('All levels')
+  const [activity, setActivity] = useState('All activities')
   const [expandedStoryId, setExpandedStoryId] = useState(null)
   const regions = [...new Set(stories.map((story) => story.region))].sort()
-  const difficulties = [...new Set(stories.map((story) => story.difficulty))].sort()
+  const activities = [...new Set(stories.map((story) => story.activity))].sort()
   const filteredStories = stories.filter((story) =>
     (region === 'All regions' || story.region === region)
-    && (difficulty === 'All levels' || story.difficulty === difficulty))
+    && (activity === 'All activities' || story.activity === activity))
 
   return (
     <div className="stories-page">
       <section className="field-hero field-hero--stories">
         <div className="container field-hero__content">
           <p className="eyebrow">Stories from the trail</p>
-          <h1>Small teams. Big mountain days.</h1>
-          <p>Read illustrative camp stories about learning, teamwork and the decisions that make a mountain experience meaningful.</p>
+          <h1>Stories from organized mountain trips</h1>
+          <p>Explore source-linked reports from club-led climbs, glacier traverses, backcountry camps and hut-to-hut treks.</p>
         </div>
       </section>
 
       <section className="container story-content">
-        <p className="illustrative-note"><strong>About these stories:</strong> All participants and camp accounts on this page are fictional illustrations, not testimonials or records of actual Alpine Ascents trips.</p>
+        <p className="story-source-note"><strong>About these stories:</strong> These summaries are based on published trip reports from The Mountaineers, an independent club. The photographs are illustrative stock images, not photographs from the reported trips.</p>
         <div className="story-filters" aria-label="Filter success stories">
           <label>
             <span>Region</span>
@@ -34,10 +34,10 @@ export default function ReviewsPage() {
             </select>
           </label>
           <label>
-            <span>Difficulty</span>
-            <select value={difficulty} onChange={(event) => setDifficulty(event.target.value)}>
-              <option>All levels</option>
-              {difficulties.map((item) => <option key={item}>{item}</option>)}
+            <span>Activity</span>
+            <select value={activity} onChange={(event) => setActivity(event.target.value)}>
+              <option>All activities</option>
+              {activities.map((item) => <option key={item}>{item}</option>)}
             </select>
           </label>
         </div>
@@ -49,10 +49,11 @@ export default function ReviewsPage() {
                 <article className="story-card" key={story.id}>
                   <img src={story.image} alt={story.imageAlt} loading="lazy" />
                   <div className="story-card__body">
-                    <div className="story-card__meta"><span>{story.region}</span><span>{story.year}</span><span>{story.difficulty}</span></div>
+                    <div className="story-card__meta"><span>{story.region}</span><span>{story.date}</span><span>{story.activity}</span></div>
                     <h2>{story.title}</h2>
                     <p className="story-card__camp">{story.camp} · {story.location}</p>
                     <p>{story.summary}</p>
+                    <a className="story-source-link" href={story.source} target="_blank" rel="noreferrer">{story.sourceLabel} <span aria-hidden="true">↗</span></a>
                     <button
                       className="story-toggle"
                       type="button"
@@ -60,13 +61,10 @@ export default function ReviewsPage() {
                       aria-controls={`story-${story.id}`}
                       onClick={() => setExpandedStoryId(expanded ? null : story.id)}
                     >{expanded ? 'Read less' : 'Read more'} <span aria-hidden="true">{expanded ? '−' : '+'}</span></button>
-                    {expanded && (
-                      <div className="story-expanded" id={`story-${story.id}`}>
-                        <h3>What the team took away</h3>
-                        <p>{story.summary} {story.participant} reflects a fictional participant created to illustrate the camp experience.</p>
-                        <p><strong>Participant:</strong> {story.participant}</p>
-                      </div>
-                    )}
+                    <div className="story-expanded" id={`story-${story.id}`} hidden={!expanded}>
+                      <h3>What this trip demonstrates</h3>
+                      <p>{story.takeaway}</p>
+                    </div>
                   </div>
                 </article>
               )

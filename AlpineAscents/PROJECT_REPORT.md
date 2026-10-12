@@ -86,6 +86,8 @@ Production commands run from `AlpineAscents/`: `npm install`, `npm run lint`, `n
 
 Standalone browser binaries were detected, but headless command-line attempts returned no DOM or screenshot output. Chrome, Edge and Firefox are therefore explicitly unverified, not reported as passing. Safari was not available on this Windows environment. A native-browser run remains a submission gate.
 
+**Post-audit checks:** the six source-linked Success Stories cards rendered; the activity filter returned the expected match; source links pointed to The Mountaineers; and the expandable summary controls remained connected to their panels. `npm run lint` and `npm run build` both passed after this update.
+
 ## Installation
 
 ```powershell
@@ -107,7 +109,7 @@ For production verification, run `npm run build` and `npm run preview`, then vis
 
 Four data-backed features were added to the existing React Router app. The Clubs page reads an international club directory from `src/data/clubs.json`, plots filtered results on an interactive Leaflet map, and keeps the search, region filter, cards, and markers in sync. A card selection pans and zooms to its marker; the browser geolocation control adds a visitor marker only after permission is granted and explains denied or unavailable access. The map uses OpenStreetMap tiles, attribution, and Leaflet rather than a Google Maps key. Pins identify each organization's city/base at city-scale coordinates; they are intended for discovery, not turn-by-turn navigation. Please have the team verify exact office pins against the linked organization contact pages before final submission.
 
-The Success Stories page reads six responsive cards from JSON, supports region and difficulty filters, and expands each card for additional context. All six examples and named participants are explicitly fictional; the page says so. The Gallery uses Unsplash photographs and YouTube's own embedded player for three climbing films, with category tabs, lazy-loaded photos and a keyboard-operable lightbox. Latest items are date-sorted and link to the original source. They combine dated 2026 club activity reports with one 2026 gear preview; activity dates and publication date are identified separately so these reports are not misrepresented as breaking news.
+The Success Stories page reads six responsive, source-linked trip reports from JSON, supports region and activity filters, and expands each card with a concise takeaway. The reports cover organized alpine climbs, a glacier traverse, a backcountry camp, an Alpine trek and a scramble. They are summaries of published reports from The Mountaineers, not Alpine Ascents trips; the stock photographs are explicitly identified as illustrative. The Gallery uses Unsplash photographs and YouTube's own embedded player for three climbing films, with category tabs, lazy-loaded photos and a keyboard-operable lightbox. Latest items are date-sorted and link to the original source. They combine dated 2026 club activity reports with one 2026 gear preview; activity dates and publication date are identified separately so these reports are not misrepresented as breaking news.
 
 ### Feature flowchart
 
@@ -121,15 +123,16 @@ flowchart TD
     F -->|Club| G[Highlight card and center marker]
     F -->|Location| H[Ask browser permission and add visitor marker]
     B -->|Success Stories| I[Read successStories.json]
-    I --> J[Filter region or difficulty]
-    J --> K[Expand a fictional camp story]
-    B -->|Gallery| L[Read gallery.json]
-    L --> M[Choose All, Photos, or Videos]
-    M --> N{Select media}
-    N -->|Photo| O[Open lightbox; arrow keys navigate; Escape closes]
-    N -->|Video| P[Play publisher-hosted YouTube embed]
-    B -->|Latest| Q[Read and sort latest.json newest first]
-    Q --> R[Open linked source]
+    I --> J[Filter region or activity]
+    J --> K[Expand a documented trip summary]
+    K --> L[Open the original club report]
+    B -->|Gallery| M[Read gallery.json]
+    M --> N[Choose All, Photos, or Videos]
+    N --> O{Select media}
+    O -->|Photo| P[Open lightbox; arrow keys navigate; Escape closes]
+    O -->|Video| Q[Play publisher-hosted YouTube embed]
+    B -->|Latest| R[Read and sort latest.json newest first]
+    R --> S[Open linked source]
 ```
 
 ### Feature data-flow diagram
@@ -143,8 +146,9 @@ flowchart LR
     LM -->|tiles and map data| OSM[OpenStreetMap]
     U -->|optional location permission| GEO[Browser Geolocation API]
     GEO -->|visitor coordinates| LM
-    U -->|filters and selection| SP[Success Stories page]
+    U -->|region and activity filters| SP[Success Stories page]
     SD[(successStories.json)] --> SP
+    SP -->|source links| SRC[The Mountaineers trip reports]
     U -->|category, photo click, keys| GP[Gallery page]
     GD[(gallery.json)] --> GP
     GP -->|image tile requests| US[Unsplash]
@@ -160,6 +164,7 @@ flowchart LR
 - **Map:** [Leaflet](https://leafletjs.com/) with [OpenStreetMap](https://www.openstreetmap.org/copyright) tiles. OSM copyright attribution is displayed on the map; no API key or `.env` setting is needed.
 - **Photographs:** the photo records, cards, and backgrounds use image URLs from Unsplash; the applicable [Unsplash License](https://unsplash.com/license) allows reuse. Image IDs and page captions/alt text are maintained in `src/data/gallery.json`, `src/data/clubs.json`, `src/data/successStories.json`, and `src/data/latest.json`.
 - **Videos:** [Free Solo — National Geographic](https://www.youtube.com/watch?v=urRVZ4SW7WU), [Breathtaking: K2 — Eddie Bauer](https://www.youtube.com/watch?v=cvFt2Xcuois), and [Link Sar — EpicTV](https://www.youtube.com/watch?v=ViSXePkt7t8). Each is embedded from its YouTube publisher rather than copied or redistributed; YouTube's [terms](https://www.youtube.com/t/terms) apply.
+- **Success stories:** six summaries link to published 2026 trip reports from [The Mountaineers](https://www.mountaineers.org/), including the [Glacier Peak climb](https://www.mountaineers.org/activities/trip-reports/glacier-peak-disappointment-peak-cleaver-18), [Inspiration-McAllister-Klawatti traverse](https://www.mountaineers.org/activities/trip-reports/intermediate-alpine-climb-inspiration-mcallister-klawatti-ice-cap-traverse-4), [Sloan Peak climb](https://www.mountaineers.org/activities/trip-reports/basic-glacier-climb-sloan-peak-corkscrew-route-5), and [Mount Margaret Backcountry trip](https://www.mountaineers.org/activities/trip-reports/in-the-shadow-of-a-volcano-basic-backpack-coldwater-peak/view#1783972441349745), plus the [August](https://www.mountaineers.org/blog/top-ten-trip-reports-august-2026) and [September 2026](https://www.mountaineers.org/blog/top-ten-trip-reports-september-2026) trip-report roundups. Summaries distinguish the original reports from Alpine Ascents, and the accompanying Unsplash images are illustrative rather than event photographs.
 - **Latest sources:** The Mountaineers' [September 2026](https://www.mountaineers.org/blog/top-ten-trip-reports-september-2026), [August 2026](https://www.mountaineers.org/blog/top-ten-trip-reports-august-2026), and [July 2026](https://www.mountaineers.org/blog/top-ten-trip-reports-july-2026) trip report roundups; Outside's [2026 gear preview](https://www.outsideonline.com/outdoor-gear/2026-outdoor-gear-preview/), updated November 18, 2025. Activity reports are dated by the activity described, not publication date.
 
 **Team hand-off:** Leaflet/OpenStreetMap was selected because it avoids a paid/API-key setup and suits this directory. Please confirm the choice with the instructor and share this report's source list with Banji/the team before submission; I cannot contact them directly from the project workspace.
