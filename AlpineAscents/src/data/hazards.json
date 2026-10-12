@@ -1,0 +1,109 @@
+{
+  "title": "Mountain hazards",
+  "intro": "Mountain risk comes from both conditions and decisions. The labels below are general teaching cues, not a forecast or an individual risk assessment; local conditions can change quickly. Turn back early when the team's safety margin is shrinking.",
+  "heroImage": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1800&q=80",
+  "sections": [
+    {
+      "heading": "Acute mountain sickness (AMS)",
+      "text": "AMS can develop after ascent to altitude, commonly causing headache with nausea, dizziness, fatigue or poor sleep. Do not ascend higher while symptoms are present or worsening. Rest and seek medical advice; if symptoms worsen, descend. A severe headache, confusion, loss of coordination or breathlessness at rest needs urgent action.",
+      "details": [
+        { "label": "Symptoms", "text": "Headache with nausea, dizziness, fatigue or loss of appetite; symptoms can overlap with dehydration or other illness." },
+        { "label": "What to do", "text": "Stop ascent, rest and monitor closely. Seek medical advice and descend if symptoms worsen or fail to improve." },
+        { "label": "Descent matters", "text": "Do not leave a symptomatic person alone or continue upward to meet a schedule." }
+      ],
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1100&q=80",
+      "alt": "High mountain terrain where altitude illness can occur",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1100&q=80" }
+    },
+    {
+      "heading": "High-altitude pulmonary edema (HAPE)",
+      "text": "HAPE is a life-threatening accumulation of fluid in the lungs at altitude. Warning signs can include unusual breathlessness on exertion that progresses to breathlessness at rest, cough, chest tightness, weakness and reduced performance. Treat suspected HAPE as an emergency: stop ascent, arrange immediate descent and emergency medical care; supplemental oxygen may be used by trained teams while evacuation is organized.",
+      "details": [
+        { "label": "Symptoms", "text": "Worsening breathlessness, initially with exertion and later at rest; cough, chest tightness, marked weakness or bluish lips can occur." },
+        { "label": "What to do", "text": "Urgently descend with assistance and seek emergency medical care; oxygen may be used while arranging evacuation." },
+        { "label": "Descent matters", "text": "Do not wait for symptoms to resolve at the same altitude or allow the person to descend alone." }
+      ],
+      "image": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1100&q=80",
+      "alt": "Storm clouds moving across high mountain peaks",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1100&q=80" },
+      "facts": ["Suspected HAPE is a medical emergency.", "Descent and urgent medical evaluation are essential."]
+    },
+    {
+      "heading": "High-altitude cerebral edema (HACE)",
+      "text": "HACE is a life-threatening form of altitude illness involving brain swelling, often following worsening AMS. Confusion, unusual behavior, poor coordination (ataxia), severe drowsiness or reduced consciousness are red flags. Arrange immediate assisted descent and emergency medical care; do not leave the person alone.",
+      "details": [
+        { "label": "Symptoms", "text": "Confusion, altered behavior, poor balance or coordination, severe drowsiness or loss of consciousness." },
+        { "label": "What to do", "text": "Treat as an emergency: arrange immediate assisted descent and emergency medical help." },
+        { "label": "Descent matters", "text": "Never wait overnight at altitude for suspected HACE to improve; do not let the person descend unaccompanied." }
+      ],
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1100&q=80",
+      "alt": "A high, snowbound mountain peak in the Himalaya",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1100&q=80" }
+    },
+    {
+      "heading": "Hypothermia",
+      "text": "Hypothermia occurs when the body loses heat faster than it can produce it. Early signs may include shivering, clumsiness, poor coordination and impaired judgment; severe hypothermia can cause confusion, reduced shivering and unconsciousness. Protect the person from wind and wet, insulate them, handle gently and seek emergency help. Do not delay evacuation for severe symptoms.",
+      "details": [
+        { "label": "Symptoms", "text": "Shivering, numbness, fumbling, slurred speech, confusion or unusual behavior; severe cases can include reduced shivering and unconsciousness." },
+        { "label": "Response", "text": "Get shelter, replace wet layers if possible, insulate from ground and wind, handle gently, and arrange medical help." },
+        { "label": "Prevention", "text": "Use suitable layers, eat and drink regularly, keep dry, monitor partners and respond early to cooling." }
+      ],
+      "image": "https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=1100&q=80",
+      "alt": "Cold, icy mountain conditions",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=1100&q=80" }
+    },
+    {
+      "heading": "Frostbite",
+      "text": "Frostbite is freezing injury to body tissue, often affecting fingers, toes, nose and ears. Numbness, pale or waxy skin and loss of sensation are warning signs; later appearance can be misleading. Protect the area from further cold and seek medical care. Rewarming a frozen part can cause additional damage if it refreezes, so follow professional guidance.",
+      "details": [
+        { "label": "Symptoms", "text": "Numbness, pale or waxy-looking skin, loss of sensation and later swelling or blistering." },
+        { "label": "Response", "text": "Prevent further exposure, protect the injured area and seek medical care; avoid rubbing or walking on frozen feet." },
+        { "label": "Prevention", "text": "Use dry insulating layers, mittens, face protection and regular buddy checks; limit exposure and keep circulation unrestrictive." }
+      ],
+      "image": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1100&q=80",
+      "alt": "A cold winter mountain landscape",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1100&q=80" }
+    }
+  ],
+  "modules": [
+    {
+      "type": "hazards",
+      "heading": "Objective and subjective hazards",
+      "groups": [
+        {
+          "heading": "Objective hazards: conditions in the mountain environment",
+          "hazards": [
+            { "name": "Avalanches", "risk": "High", "description": "Snowpack failure can bury, injure or kill people.", "cause": "Unstable layers, new snow, wind loading, warming or human loading on avalanche terrain.", "signs": "Recent avalanches, cracking or collapsing snow, rapid loading, wind-drifted snow or changing temperature.", "reduction": "Check the local avalanche forecast, take recognized training, carry and practice with beacon, shovel and probe, choose conservative terrain and travel one at a time where appropriate." },
+            { "name": "Rockfall", "risk": "High", "description": "Falling rock can strike climbers below cliffs or in gullies.", "cause": "Freeze-thaw, weathering, loose rock, animals or climbers dislodging blocks.", "signs": "Fresh debris, recent rockfall, warming after freeze, loose ground or people above.", "reduction": "Avoid exposure where possible, wear a helmet, keep spacing and move efficiently through fall zones; retreat if rockfall increases." },
+            { "name": "Crevasses", "risk": "High", "description": "Glacier cracks may be hidden by snow bridges and can cause falls.", "cause": "Glacier movement opens fractures that seasonal snow can conceal.", "signs": "Visible cracks, sagging or hollow snow, changes in surface texture and known crevasse fields.", "reduction": "Use a trained rope team and rescue-capable system, gather current route information and turn back when visibility or snow conditions deteriorate." },
+            { "name": "Bad weather and storms", "risk": "High", "description": "Storms can bring lightning, whiteout, high winds, heavy precipitation and rapid temperature drops.", "cause": "Changing fronts, convection, elevation and local terrain effects.", "signs": "Forecast warnings, building cloud, falling visibility, wind increase, temperature change or thunder.", "reduction": "Check mountain-specific forecasts, set turn-around times, identify shelter and escape routes, and descend before exposure becomes unsafe." },
+            { "name": "Extreme cold", "risk": "High", "description": "Cold, wind and wet clothing can cause hypothermia, frostbite and loss of dexterity.", "cause": "Low temperatures, wind chill, moisture, exhaustion and inadequate protection.", "signs": "Persistent shivering, numb skin, fumbling, unusual behavior or loss of coordination.", "reduction": "Layer for conditions, stay dry, eat and drink, check partners often and descend or seek shelter at early symptoms." }
+          ]
+        },
+        {
+          "heading": "Subjective hazards: decisions and team factors",
+          "hazards": [
+            { "name": "Poor judgment", "risk": "High", "description": "Summit pressure or commitment can make a deteriorating situation seem acceptable.", "cause": "Sunk-cost thinking, schedule pressure, overconfidence or unclear decision authority.", "signs": "Ignoring agreed turnaround times, minimizing new hazards or continuing without a viable descent plan.", "reduction": "Agree on objective criteria in advance, empower every member to call a stop and treat retreat as a normal outcome." },
+            { "name": "Fatigue", "risk": "Medium", "description": "Fatigue degrades balance, pace, attention and decision-making.", "cause": "Long days, inadequate food or water, cold, poor sleep, altitude or excessive load.", "signs": "Repeated mistakes, slowing pace, stumbling, irritability, poor concentration or missed checks.", "reduction": "Set a sustainable pace, plan rest and fueling, share observations and shorten or end the objective when performance fades." },
+            { "name": "Inexperience", "risk": "High", "description": "A team may not recognize terrain hazards or operate equipment correctly.", "cause": "Insufficient training, unfamiliar conditions or attempting a route beyond current ability.", "signs": "Uncertainty about systems, repeated instruction gaps, poor route choices or inability to adapt.", "reduction": "Build skills progressively, use a qualified guide when appropriate, practice in low-consequence settings and choose a route within the team's ability." },
+            { "name": "Group dynamics", "risk": "Low", "description": "Early friction can remain low risk when the team communicates openly; unresolved conflict or pressure can quickly raise the risk.", "cause": "Unequal experience, fatigue, conflict, unclear roles or reluctance to speak up.", "signs": "A quiet or isolated member, assumptions about agreement, rushed checks or unresolved disagreements.", "reduction": "Set roles and communication norms, check in individually, invite dissent and pause when the team is not aligned." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "notice",
+      "heading": "Medical emergency: descend and get help",
+      "tone": "critical",
+      "text": "Suspected HAPE or HACE, severe hypothermia, or any rapidly worsening illness needs urgent action. Stop ascent, protect the person, arrange assisted descent and contact local emergency or rescue services. This page is educational information, not diagnosis or individualized medical advice."
+    }
+  ],
+  "sources": [
+    { "label": "CDC Yellow Book — high-altitude travel and altitude illness", "url": "https://www.cdc.gov/yellow-book/" },
+    { "label": "UIAA Medical Commission — mountain medicine and altitude resources", "url": "https://www.theuiaa.org/medical-advice/" },
+    { "label": "American Avalanche Association — education and avalanche resources", "url": "https://www.avalanche.org/" },
+    { "label": "National Weather Service — mountain weather and safety resources", "url": "https://www.weather.gov/safety/" },
+    { "label": "Unsplash — image source links are credited below each photograph", "url": "https://unsplash.com/license" }
+  ],
+  "nextTopic": { "label": "Records", "href": "/records" }
+}

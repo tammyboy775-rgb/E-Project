@@ -1,0 +1,64 @@
+{
+  "title": "Types & styles of mountaineering",
+  "intro": "Mountaineering includes everything from non-technical mountain travel to steep, technical climbing. Terrain, exposure, altitude and remoteness shape the skills and equipment needed; a style describes how an objective is approached, not a universal grade.",
+  "heroImage": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=80",
+  "sections": [
+    {
+      "heading": "Choosing a discipline",
+      "text": "A route may combine several disciplines: a trek can approach a glacier, an alpine climb can include rock and ice, and a ski tour can cross glaciated terrain. Match the objective to current team skills, conditions and equipment, and seek qualified instruction before attempting technical ground.",
+      "image": "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1200&q=80",
+      "alt": "A small group hiking along a mountain trail",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1200&q=80" }
+    },
+    {
+      "heading": "Alpine style and siege style",
+      "text": "In alpine style, a small team carries its supplies and climbs continuously, generally without fixing a route or establishing a chain of stocked camps. Siege style uses a larger expedition, fixed ropes and successive camps supplied by repeated carries; it can support acclimatization and logistics on very high peaks but requires more time and resources. These are broad approaches, not rigid categories, and real expeditions may mix methods.",
+      "image": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1200&q=80",
+      "alt": "A remote high-altitude mountain ridge with clouds",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1200&q=80" },
+      "facts": ["Alpine style emphasizes a light, continuous push by a small team.", "Siege style uses camps and repeated supply carries; neither style guarantees safety."]
+    }
+  ],
+  "modules": [
+    {
+      "type": "cards",
+      "heading": "Seven common types",
+      "intro": "Difficulty labels are relative: route grades, weather, altitude, remoteness and a climber's experience can change the real demands.",
+      "cards": [
+        { "title": "Alpine climbing", "description": "Climbing a mountain route that may combine rock, snow and ice, often with long approaches and changing conditions.", "terrain": "Ridges, glaciers, mixed faces and high passes.", "skill": "Intermediate to expert; depends strongly on route.", "gear": "Helmet, harness, rope, protection, crampons, ice axe, navigation and weather layers.", "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80", "alt": "High snowy ridges in an alpine mountain range" },
+        { "title": "Expedition / Himalayan climbing", "description": "Remote, high-altitude climbing with complex logistics, extended acclimatization and camps. Expeditions may use alpine, siege or hybrid styles.", "terrain": "Very high snow, ice, glaciers and exposed ridges.", "skill": "Advanced; requires prior altitude and technical experience.", "gear": "Expedition clothing, high-altitude boots, shelter, communications and objective-specific climbing kit.", "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80", "alt": "Vast mountain landscape and distant high peaks" },
+        { "title": "Rock climbing", "description": "Progress on rock faces using hands and feet, with protection and belaying appropriate to the route.", "terrain": "Crags, cliffs, ridges and multi-pitch walls.", "skill": "Beginner to expert; routes are graded by technical difficulty.", "gear": "Climbing shoes, helmet, harness, rope, belay device and route-specific protection.", "image": "https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=900&q=80", "alt": "A climber ascending a steep rock face" },
+        { "title": "Ice climbing", "description": "Climbing frozen water or alpine ice using specialized tools and protection.", "terrain": "Frozen waterfalls, gullies and ice faces.", "skill": "Intermediate to expert; ice quality and temperature vary.", "gear": "Helmet, harness, crampons, ice tools, screws and insulating layers.", "image": "https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=900&q=80", "alt": "Glacier ice and a steep frozen mountain slope" },
+        { "title": "Mixed climbing", "description": "Climbing a route that alternates between rock, ice and snow, requiring transitions between movement techniques.", "terrain": "Alpine gullies, frozen cliffs and rocky winter faces.", "skill": "Advanced; requires solid rock and ice skills.", "gear": "Helmet, harness, technical tools, crampons, rope and mixed protection.", "image": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80", "alt": "Dark rocky mountain slopes beneath winter conditions" },
+        { "title": "Ski mountaineering", "description": "Travel and climb on skis, sometimes carrying skis on steep sections and skiing a planned descent.", "terrain": "Snow-covered slopes, glaciers and high passes.", "skill": "Advanced downhill skiing plus avalanche, navigation and glacier skills.", "gear": "Touring skis and bindings, skins, boots, beacon, shovel, probe, helmet and glacier kit as required.", "image": "https://images.unsplash.com/photo-1517299321609-52687d1bc55a?auto=format&fit=crop&w=900&q=80", "alt": "Snow-covered mountain terrain suitable for ski touring" },
+        { "title": "Hiking and scrambling", "description": "Mountain walking ranges from marked trails to hands-on scrambling over non-technical rock; some scrambling routes have serious exposure.", "terrain": "Paths, ridges, scree and easy rock steps.", "skill": "Beginner to advanced, depending on navigation and exposure.", "gear": "Suitable boots, weather layers, map, compass or GPS, food, water and a headlamp.", "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80", "alt": "Mountain valley and a trail through the landscape" }
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Compare the disciplines",
+      "columns": [
+        { "key": "type", "label": "Type" },
+        { "key": "difficulty", "label": "Difficulty" },
+        { "key": "gear", "label": "Common gear" },
+        { "key": "objective", "label": "Typical objective" }
+      ],
+      "rows": [
+        { "type": "Alpine climbing", "difficulty": "Intermediate–expert", "gear": "Rope, helmet, crampons, axe", "objective": "Summit a mixed mountain route" },
+        { "type": "Expedition / Himalayan", "difficulty": "Advanced", "gear": "High-altitude clothing, camps, communications", "objective": "Remote high peak" },
+        { "type": "Rock climbing", "difficulty": "Beginner–expert", "gear": "Shoes, rope, harness, protection", "objective": "Crag or multi-pitch route" },
+        { "type": "Ice climbing", "difficulty": "Intermediate–expert", "gear": "Crampons, ice tools, screws", "objective": "Frozen waterfall or ice face" },
+        { "type": "Mixed climbing", "difficulty": "Advanced", "gear": "Technical tools, crampons, mixed protection", "objective": "Rock-and-ice alpine line" },
+        { "type": "Ski mountaineering", "difficulty": "Advanced", "gear": "Touring skis, avalanche rescue kit", "objective": "Climb and ski a mountain route" },
+        { "type": "Hiking / scrambling", "difficulty": "Beginner–advanced", "gear": "Boots, layers, navigation", "objective": "Mountain trail or ridge" }
+      ]
+    }
+  ],
+  "sources": [
+    { "label": "British Mountaineering Council — skills, climbing and mountain safety", "url": "https://www.thebmc.co.uk/" },
+    { "label": "American Alpine Club — climbing knowledge and publications", "url": "https://americanalpineclub.org/" },
+    { "label": "UIAA — international mountaineering resources", "url": "https://www.theuiaa.org/" },
+    { "label": "Unsplash — image source links are provided in the cards", "url": "https://unsplash.com/license" }
+  ],
+  "nextTopic": { "label": "Techniques", "href": "/techniques" }
+}
