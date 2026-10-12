@@ -1,0 +1,70 @@
+{
+  "title": "Mountaineering records",
+  "intro": "First ascents and climbing records capture particular moments in a changing sport. Definitions matter: route, season, summit verification, use of oxygen and the record-keeping body can affect a claim. Always check the linked source for the latest status.",
+  "heroImage": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1800&q=80",
+  "sections": [
+    {
+      "heading": "The fourteen 8,000-metre peaks",
+      "text": "The fourteen conventionally recognized mountains above 8,000 metres span the Himalaya and Karakoram. Their first ascents were achieved by international teams over several decades. These records should recognize the expedition members and local high-altitude workers who contributed to each climb.",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "A panorama of high snow-covered mountain peaks",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" },
+      "facts": ["There are fourteen conventionally recognized 8,000-metre peaks.", "Peak heights may vary slightly among maps and surveying sources."]
+    },
+    {
+      "heading": "First ascents and changing milestones",
+      "text": "The first ascent of a summit is only one kind of achievement. Later milestones include winter ascents, routes without supplemental oxygen, solo climbs and faster completions. Many record claims are time-sensitive and depend on independently checking the route and summit details.",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
+      "alt": "High mountain peaks viewed across a broad landscape",
+      "imageCredit": { "label": "Unsplash image source", "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" }
+    }
+  ],
+  "modules": [
+    {
+      "type": "records",
+      "id": "records-table",
+      "heading": "Notable first ascents and records",
+      "asOf": "As of 12 October 2026. The Himalayan Database coverage reviewed here runs through Autumn–Winter 2025. Records are category- and source-dependent; check the linked record keeper for later updates.",
+      "columns": [
+        { "key": "record", "label": "Record" },
+        { "key": "holder", "label": "Holder" },
+        { "key": "date", "label": "Date" },
+        { "key": "mountain", "label": "Mountain" },
+        { "key": "category", "label": "Category" }
+      ],
+      "note": "Historical age and speed milestones below are date-stamped achievements, not a guarantee that they remain the current world record. Speed claims are especially sensitive to definitions and subsequent updates.",
+      "records": [
+        { "key": "everest-first", "record": "First ascent", "holder": "Edmund Hillary and Tenzing Norgay", "date": "29 May 1953", "mountain": "Everest", "category": "First ascent · 8,000 m peaks" },
+        { "key": "k2-first", "record": "First ascent", "holder": "Lino Lacedelli and Achille Compagnoni", "date": "31 July 1954", "mountain": "K2", "category": "First ascent · 8,000 m peaks" },
+        { "key": "kangchenjunga-first", "record": "First ascent", "holder": "Joe Brown and George Band", "date": "25 May 1955", "mountain": "Kangchenjunga", "category": "First ascent · 8,000 m peaks" },
+        { "key": "lhotse-first", "record": "First ascent", "holder": "Ernst Reiss and Fritz Luchsinger", "date": "18 May 1956", "mountain": "Lhotse", "category": "First ascent · 8,000 m peaks" },
+        { "key": "makalu-first", "record": "First ascent", "holder": "Lionel Terray and Jean Couzy", "date": "15 May 1955", "mountain": "Makalu", "category": "First ascent · 8,000 m peaks" },
+        { "key": "cho-oyu-first", "record": "First ascent", "holder": "Herbert Tichy, Joseph Jöchler and Pasang Dawa Lama", "date": "19 October 1954", "mountain": "Cho Oyu", "category": "First ascent · 8,000 m peaks" },
+        { "key": "dhaulagiri-first", "record": "First ascent", "holder": "Kurt Diemberger, Peter Diener, Ernst Forrer, Albin Schelbert, Nawang Dorje and Nima Dorje", "date": "13 May 1960", "mountain": "Dhaulagiri I", "category": "First ascent · 8,000 m peaks" },
+        { "key": "manaslu-first", "record": "First ascent", "holder": "Toshio Imanishi and Gyalzen Norbu", "date": "9 May 1956", "mountain": "Manaslu", "category": "First ascent · 8,000 m peaks" },
+        { "key": "nanga-parbat-first", "record": "First ascent", "holder": "Hermann Buhl", "date": "3 July 1953", "mountain": "Nanga Parbat", "category": "First ascent · 8,000 m peaks" },
+        { "key": "annapurna-first", "record": "First ascent", "holder": "Maurice Herzog and Louis Lachenal", "date": "3 June 1950", "mountain": "Annapurna I", "category": "First ascent · 8,000 m peaks" },
+        { "key": "gasherbrum-1-first", "record": "First ascent", "holder": "Andrew Kauffman and Peter Schoening", "date": "5 July 1958", "mountain": "Gasherbrum I", "category": "First ascent · 8,000 m peaks" },
+        { "key": "broad-peak-first", "record": "First ascent", "holder": "Fritz Wintersteller, Marcus Schmuck, Kurt Diemberger and Hermann Buhl", "date": "9 June 1957", "mountain": "Broad Peak", "category": "First ascent · 8,000 m peaks" },
+        { "key": "gasherbrum-2-first", "record": "First ascent", "holder": "Fritz Moravec, Josef Larch and Hans Willenpart", "date": "7 July 1956", "mountain": "Gasherbrum II", "category": "First ascent · 8,000 m peaks" },
+        { "key": "shishapangma-first", "record": "First ascent", "holder": "Chinese expedition team", "date": "2 May 1964", "mountain": "Shishapangma", "category": "First ascent · 8,000 m peaks" },
+        { "key": "annapurna-major", "record": "First 8,000-metre peak climbed", "holder": "Maurice Herzog and Louis Lachenal", "date": "3 June 1950", "mountain": "Annapurna I", "category": "First ascent · 8,000 m peaks" },
+        { "key": "everest-no-oxygen", "record": "First ascent without supplemental oxygen", "holder": "Reinhold Messner and Peter Habeler", "date": "8 May 1978", "mountain": "Everest", "category": "Oxygen-free ascents" },
+        { "key": "everest-solo-no-oxygen", "record": "First solo ascent without supplemental oxygen", "holder": "Reinhold Messner", "date": "20 August 1980", "mountain": "Everest", "category": "Oxygen-free ascents" },
+        { "key": "everest-youngest", "record": "Youngest climber at the time of ascent (historic milestone)", "holder": "Jordan Romero (age 13)", "date": "22 May 2010", "mountain": "Everest", "category": "Age milestones" },
+        { "key": "everest-oldest-male", "record": "Oldest man at the time of ascent (historic Guinness benchmark)", "holder": "Yuichiro Miura (age 80)", "date": "23 May 2013", "mountain": "Everest", "category": "Age milestones" },
+        { "key": "everest-oldest-female", "record": "Oldest woman at the time of ascent (historic milestone)", "holder": "Tamae Watanabe (age 73)", "date": "19 May 2012", "mountain": "Everest", "category": "Age milestones" },
+        { "key": "14-peaks-speed", "record": "Reported fastest completion of all fourteen 8,000ers (92 days)", "holder": "Kristin Harila and Tenjen (Lama) Sherpa", "date": "27 July 2023", "mountain": "All fourteen 8,000-metre peaks", "category": "Speed milestones" },
+        { "key": "purja-speed", "record": "Project Possible: all fourteen 8,000ers in six months and six days", "holder": "Nirmal Purja and expedition team", "date": "29 October 2019", "mountain": "All fourteen 8,000-metre peaks", "category": "Speed milestones" }
+      ]
+    }
+  ],
+  "sources": [
+    { "label": "The Himalayan Database — expedition records updated through Autumn-Winter 2025", "url": "https://www.himalayandatabase.com/" },
+    { "label": "8000ers.com — specialist archive on the world's 8,000-metre peaks", "url": "https://www.8000ers.com/" },
+    { "label": "Guinness World Records — search current Everest and mountaineering records", "url": "https://www.guinnessworldrecords.com/search?term=Everest" },
+    { "label": "Encyclopaedia Britannica — first ascent of Everest and mountaineering history", "url": "https://www.britannica.com/event/first-ascent-of-Mount-Everest" },
+    { "label": "Unsplash — image source links are credited below each photograph", "url": "https://unsplash.com/license" }
+  ],
+  "nextTopic": { "label": "History", "href": "/history" }
+}
