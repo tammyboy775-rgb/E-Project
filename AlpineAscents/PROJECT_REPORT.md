@@ -150,8 +150,8 @@ The Success Stories page reads six responsive, source-linked trip reports from J
 
 - [x] React source, routes, JSON content, and installation steps.
 - [x] Project report, test data, diagrams, and assumptions document.
-- [ ] Record a demo video covering navigation states, counter, ticker, each content page, Records map, gallery and mobile layout.
+- [x] Record a demo video covering navigation states, counter, ticker, each content page, Records map, gallery and mobile layout.
 - [x] Test and verify the site in Chrome, Edge, and Firefox.
 - [ ] Test in Safari if an Apple device becomes available.
 - [ ] Confirm Raalujah's and Derrick's actual diagram contributions before final attribution.
-- [ ] Pull the published `main` before teammates create feature branches.
+- [x] Pull the published `main` before teammates create feature branches.
