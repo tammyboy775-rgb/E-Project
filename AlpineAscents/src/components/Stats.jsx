@@ -2,7 +2,7 @@ import './Stats.css'
 
 export default function Stats({ stats }) {
   return (
-    <section className="stats-section">
+    <section className="stats-section" data-reveal>
       <div className="container stats-grid">
         {stats.map((stat) => (
           <div key={stat.label} className="stat-item">

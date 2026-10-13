@@ -208,7 +208,7 @@ export default function KnowledgeSection({ title, intro, heroImage, heroAlt, her
         </div>
       </header>
 
-      <div className="container knowledge-intro">
+      <div className="container knowledge-intro" data-reveal>
         <p>{intro}</p>
       </div>
 
@@ -220,7 +220,7 @@ export default function KnowledgeSection({ title, intro, heroImage, heroAlt, her
 
         <div className="knowledge-content">
           {sections.map((section, index) => (
-            <section className={`knowledge-section${index % 2 ? ' knowledge-section--reverse' : ''}`} id={slugify(section.heading)} key={section.heading}>
+            <section className={`knowledge-section${index % 2 ? ' knowledge-section--reverse' : ''}`} id={slugify(section.heading)} key={section.heading} data-reveal>
               <div className="knowledge-section__copy">
                 <p className="knowledge-section__index">{String(index + 1).padStart(2, '0')}</p>
                 <h2>{section.heading}</h2>

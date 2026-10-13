@@ -10,42 +10,35 @@ First-time visitors need a clear introduction to mountaineering, practical safet
 - **Typography:** DM Sans for interface and body copy; Playfair Display for display headings.
 - **Layout:** centered 1200px content; wide directory uses three columns, tablet two, narrow screens one. Header groups six subject links under Explore. The 36px ticker is fixed at the bottom with reserved page padding.
 - **Motion and access:** dropdown/mobile navigation fades over 240ms; links expose active/hover/focus/pressed states; Escape closes open menus; reduced-motion preference disables animation.
+- **Content reveals:** page heroes fade and rise on entry; marked content sections reveal once when scrolled into view, and the home directory cards use a short stagger. Effects are disabled for visitors who request reduced motion.
 - **Wireframe:** sticky header with Home, Explore, section links and visitor/logo cluster; mountain hero; mountaineering definition and mission; 12 destination cards; testimonials and call to action; footer; fixed time/location ticker. Inner pages use a topic hero, scannable content, and onward links.
+
+## Project Deliverable Index
+
+| Required deliverable | Included in this submission |
+| --- | --- |
+| Problem definition | This report's [Problem Definition](#problem-definition) |
+| Design specifications | This report's [Design Specifications](#design-specifications) |
+| Activity flowchart and data-flow diagram | This report's [Flowchart](#flowchart), [Data-Flow Diagram](#data-flow-diagram), and feature-specific diagrams below |
+| Source code | Application source in `src/`, including the route and shared UI files listed in [Source Code and Content](#source-code-and-content) |
+| Test data and results | JSON content datasets in `src/data/` and the route/interaction/browser results in [Test Data](#test-data) |
+| Installation instructions | Prerequisites and local run/build commands in [Installation](#installation) |
 
 ## Flowchart
 
-Prepared as an illustrative design artifact for team review. Raalujah is the requested reviewer/contributor; confirm final attribution with the team before submission.
+This overview follows the main visitor journey through the portal.
 
-```mermaid
-flowchart TD
-    A[Open Alpine Ascents] --> B{Choose a destination}
-    B -->|Home card or navigation| C[Render route in shared layout]
-    C --> D[Read route content from JSON]
-    D --> E[Explore page and follow internal links]
-    E --> F{Need preparation help?}
-    F -->|Yes| G[Open guidelines and check gear]
-    F -->|No| H[Continue exploring or contact the team]
-```
+![Alpine Ascents visitor journey flowchart](docs/diagrams/portal-flow.svg)
 
 ## Data-Flow Diagram
 
-Prepared as an illustrative design artifact for team review. Derrick is the requested reviewer/contributor; confirm final attribution with the team before submission.
+This diagram shows how visitor actions, bundled content, browser storage, geolocation, maps and media services exchange data.
 
-```mermaid
-flowchart LR
-    V[Visitor] -->|route and interaction| UI[React page and shared layout]
-    JSON[(Bundled JSON content)] -->|copy, links, seed| UI
-    UI -->|increment once per session| LS[(Browser localStorage)]
-    SS[(Browser sessionStorage)] -->|session guard| UI
-    GEO[Browser geolocation] -->|coordinates with permission| UI
-    UI -->|optional reverse lookup| NOM[OpenStreetMap Nominatim]
-    OSM[OpenStreetMap embed] -->|map tiles| UI
-    UI -->|rendered page| V
-```
+![Alpine Ascents portal data-flow diagram](docs/diagrams/portal-data-flow.svg)
 
 ## Source Code and Content
 
-Application source is under `src/`. Route ownership and global design rules are documented in [README.md](README.md). Main implementation areas: `src/App.jsx`, `src/components/Header.jsx`, `src/components/VisitorCounter.jsx`, `src/components/Ticker.jsx`, `src/components/Layout.jsx`, `src/pages/HomePage.jsx`, `src/pages/GuidelinesPage.jsx`, and JSON files in `src/data/`.
+The complete application source is included in the project under [`src/`](src/). Route ownership, run commands, and global design rules are documented in [README.md](README.md). Main implementation areas include `src/App.jsx` (SPA routes), `src/components/` (shared header, visitor counter, ticker, footer and layout), `src/pages/` (page views), `src/data/` (content and test datasets), and `src/index.css` / `src/App.css` (global styles).
 
 Example of the route and seed data shape:
 
@@ -62,6 +55,18 @@ Example of the route and seed data shape:
 ```
 
 ## Test Data
+
+The project uses bundled JSON as deterministic page and interaction data; no separate database or external test fixture is required.
+
+| Dataset | Test data used |
+| --- | --- |
+| `src/data/alpineAscentsData.json` | Navigation routes, brand, visitor-count seed (`1,200`), home content and footer content |
+| `src/data/mountaineeringPages.json` | Home overview and educational topic content for history, types, techniques, sheltering, hazards and records |
+| `src/data/clubs.json` | International organization names, regions, countries, map coordinates, destination ranges and website links; exercised with search, region filtering, selection and optional browser geolocation |
+| `src/data/successStories.json` | Six source-linked organized trip reports, with region/activity values used by the story filters and expansion controls |
+| `src/data/gallery.json` | Photo/video records, captions, alt text and publisher/source links; exercised with media filters and photo navigation |
+| `src/data/latest.json` | Dated mountain updates and original source links; used to verify reverse-chronological listing |
+| `src/data/guidelines.json` | Preparation and safety guidance plus ten gear checklist entries; used to verify checklist progress |
 
 Production commands run from `AlpineAscents/`: `npm install`, `npm run lint`, `npm run build`, then `npm run preview`.
 
@@ -90,13 +95,15 @@ Standalone browser binaries were detected, but headless command-line attempts re
 
 ## Installation
 
+Install [Node.js 20.19+ or 22.12+](README.md#run-locally) and npm, then run:
+
 ```powershell
 cd AlpineAscents
 npm install
 npm run dev
 ```
 
-For production verification, run `npm run build` and `npm run preview`, then visit the printed local URL. The preview server supports refreshing nested SPA routes.
+Open the local URL printed by Vite. For production verification, run `npm run lint`, `npm run build`, and `npm run preview`, then visit the printed preview URL. The preview server supports refreshing nested SPA routes. Geolocation and external map tiles, reverse-geocoding, photos, and videos require network access; the browser asks for location permission before showing the visitor's position or a named location.
 
 ## Sources and Assumptions
 
@@ -113,50 +120,11 @@ The Success Stories page reads six responsive, source-linked trip reports from J
 
 ### Feature flowchart
 
-```mermaid
-flowchart TD
-    A[Open Clubs, Stories, Gallery, or Latest] --> B{Select feature}
-    B -->|Clubs| C[Read clubs.json]
-    C --> D[Search or choose region]
-    D --> E[Render matching cards and map markers]
-    E --> F{Select club or location}
-    F -->|Club| G[Highlight card and center marker]
-    F -->|Location| H[Ask browser permission and add visitor marker]
-    B -->|Success Stories| I[Read successStories.json]
-    I --> J[Filter region or activity]
-    J --> K[Expand a documented trip summary]
-    K --> L[Open the original club report]
-    B -->|Gallery| M[Read gallery.json]
-    M --> N[Choose All, Photos, or Videos]
-    N --> O{Select media}
-    O -->|Photo| P[Open lightbox; arrow keys navigate; Escape closes]
-    O -->|Video| Q[Play publisher-hosted YouTube embed]
-    B -->|Latest| R[Read and sort latest.json newest first]
-    R --> S[Open linked source]
-```
+![Alpine Ascents feature flowchart](docs/diagrams/feature-flow.svg)
 
 ### Feature data-flow diagram
 
-```mermaid
-flowchart LR
-    U[Visitor] -->|query and region| CP[Clubs page]
-    CD[(clubs.json)] --> CP
-    CP -->|matching coordinates| LM[Leaflet map]
-    CP -->|matching records| CC[Club cards]
-    LM -->|tiles and map data| OSM[OpenStreetMap]
-    U -->|optional location permission| GEO[Browser Geolocation API]
-    GEO -->|visitor coordinates| LM
-    U -->|region and activity filters| SP[Success Stories page]
-    SD[(successStories.json)] --> SP
-    SP -->|source links| SRC[The Mountaineers trip reports]
-    U -->|category, photo click, keys| GP[Gallery page]
-    GD[(gallery.json)] --> GP
-    GP -->|image tile requests| US[Unsplash]
-    GP -->|video playback| YT[YouTube embedded player]
-    U -->|open a source| LP[Latest page]
-    LD[(latest.json)] -->|date-sort| LP
-    LP -->|source links| SRC[Original publishers]
-```
+![Alpine Ascents feature data-flow diagram](docs/diagrams/feature-data-flow.svg)
 
 ### Content and media sources
 

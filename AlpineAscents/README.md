@@ -28,6 +28,10 @@ The primary routes are `/`, `/history`, `/types`, `/techniques`, `/sheltering`, 
 6. Run `npm run lint` and `npm run build` before requesting review. Check direct route refreshes and mobile widths for each changed page.
 The six topic routes use a shared `src/components/KnowledgeSection.jsx` template. Each route entry under `src/pages/<Topic>/<Topic>Page.jsx` imports its own JSON file from `src/data/` and passes that content to the component. The legacy route entry files under `src/pages/` re-export those implementations so the router and navigation remain unchanged.
 
+## Motion and Accessibility
+
+Page heroes use a brief fade-and-rise entrance, while marked sections and cards reveal once as they enter the viewport. The home-page topic cards use a short stagger. These effects are skipped when the visitor's operating system requests reduced motion, and content stays visible if scroll observation is unavailable.
+
 ## Mountaineering Knowledge Pages
 
 The History, Types & Styles, Techniques, Sheltering, Hazards, and Records pages share one responsive layout. Page title, introduction, illustrated sections, image alt text and credits, and source references are supplied as JSON. The reusable component generates alternating image/text sections, a desktop sticky contents list, facts cards, and the next-topic navigation. Optional data-driven modules add a mobile timeline, discipline cards, horizontally scrollable comparison tables, numbered steps, safety notices, hazard/risk cards, and a searchable and sortable records table. To add or edit a topic, update its JSON rather than writing another layout.

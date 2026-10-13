@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Alpine Ascents portal data-flow diagram</title>
+  <desc id="desc">Shows information exchanged among a visitor's browser, the React portal, browser storage, geolocation, OpenStreetMap, Nominatim, Unsplash, YouTube and linked publishers.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#62776d"/>
+    </marker>
+    <style>
+      text{font-family:"DM Sans",Arial,sans-serif;fill:#18332e}
+      .title{font-size:26px;font-weight:700;fill:#fff}
+      .subtitle{font-size:14px;fill:#dfe9dc}
+      .group{font-size:15px;font-weight:700;letter-spacing:1px}
+      .label{font-size:14px;font-weight:700}
+      .small{font-size:12px;fill:#51655d}
+      .line{fill:none;stroke:#62776d;stroke-width:2;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="680" rx="18" fill="#f5f3e9"/>
+  <path d="M18 0h1164a18 18 0 0 1 18 18v68H0V18A18 18 0 0 1 18 0Z" fill="#18332e"/>
+  <text x="38" y="42" class="title">Alpine Ascents | Data flow</text>
+  <text x="38" y="67" class="subtitle">Browser data stays local unless a visitor requests location or opens an external resource</text>
+
+  <rect x="28" y="112" width="235" height="530" rx="18" fill="#eef2e9" stroke="#b7c6b6"/>
+  <text x="48" y="145" class="group">VISITOR DEVICE</text>
+  <rect x="56" y="180" width="180" height="66" rx="13" fill="#18332e"/>
+  <text x="146" y="220" class="label" text-anchor="middle" fill="#fff">Visitor</text>
+  <rect x="56" y="298" width="180" height="78" rx="13" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="146" y="328" class="label" text-anchor="middle">Geolocation</text>
+  <text x="146" y="350" class="small" text-anchor="middle">After permission</text>
+  <rect x="56" y="442" width="180" height="66" rx="13" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="146" y="470" class="label" text-anchor="middle">localStorage</text>
+  <text x="146" y="490" class="small" text-anchor="middle">Visitor total</text>
+  <rect x="56" y="538" width="180" height="66" rx="13" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="146" y="566" class="label" text-anchor="middle">sessionStorage</text>
+  <text x="146" y="586" class="small" text-anchor="middle">Visit guard</text>
+
+  <rect x="344" y="112" width="400" height="530" rx="18" fill="#e9f0e9" stroke="#287565" stroke-width="2"/>
+  <text x="366" y="145" class="group">ALPINE ASCENTS · REACT SPA</text>
+  <rect x="382" y="180" width="324" height="76" rx="13" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="544" y="211" class="label" text-anchor="middle">Pages and shared layout</text>
+  <text x="544" y="234" class="small" text-anchor="middle">Navigation, stories, gallery and updates</text>
+  <rect x="382" y="320" width="146" height="76" rx="13" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="455" y="351" class="label" text-anchor="middle">Bundled JSON</text>
+  <text x="455" y="374" class="small" text-anchor="middle">Content and links</text>
+  <rect x="560" y="320" width="146" height="76" rx="13" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="633" y="351" class="label" text-anchor="middle">Live ticker</text>
+  <text x="633" y="374" class="small" text-anchor="middle">Date, time, place</text>
+  <rect x="382" y="466" width="324" height="76" rx="13" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="544" y="497" class="label" text-anchor="middle">Leaflet clubs map</text>
+  <text x="544" y="520" class="small" text-anchor="middle">Club coordinates and optional visitor marker</text>
+
+  <rect x="825" y="112" width="347" height="530" rx="18" fill="#f0eee5" stroke="#b7c6b6"/>
+  <text x="847" y="145" class="group">EXTERNAL SERVICES</text>
+  <rect x="861" y="180" width="275" height="58" rx="13" fill="#fff" stroke="#9aaa9b"/>
+  <text x="998" y="215" class="label" text-anchor="middle">OpenStreetMap Nominatim</text>
+  <rect x="861" y="270" width="275" height="58" rx="13" fill="#fff" stroke="#9aaa9b"/>
+  <text x="998" y="305" class="label" text-anchor="middle">OpenStreetMap map tiles</text>
+  <rect x="861" y="360" width="275" height="58" rx="13" fill="#fff" stroke="#9aaa9b"/>
+  <text x="998" y="395" class="label" text-anchor="middle">Unsplash photographs</text>
+  <rect x="861" y="450" width="275" height="58" rx="13" fill="#fff" stroke="#9aaa9b"/>
+  <text x="998" y="485" class="label" text-anchor="middle">YouTube video embeds</text>
+  <rect x="861" y="540" width="275" height="58" rx="13" fill="#fff" stroke="#9aaa9b"/>
+  <text x="998" y="575" class="label" text-anchor="middle">Clubs and report publishers</text>
+
+  <path class="line" d="M236 210h145"/>
+  <text x="306" y="198" class="small" text-anchor="middle">interactions</text>
+  <path class="line" d="M382 228H278v-18h-42"/>
+  <text x="309" y="245" class="small" text-anchor="middle">rendered pages</text>
+  <path class="line" d="M455 320v-42h89v-22"/>
+  <path class="line" d="M633 320v-42h-89"/>
+  <path class="line" d="M236 335h90v169h56"/>
+  <text x="289" y="488" class="small" text-anchor="middle">permitted coordinates</text>
+  <path class="line" d="M706 350h110v-141h45"/>
+  <text x="780" y="197" class="small" text-anchor="middle">reverse lookup</text>
+  <path class="line" d="M861 225h-95v130h-60"/>
+  <text x="798" y="372" class="small" text-anchor="middle">place name</text>
+  <path class="line" d="M706 503h105v-204h50"/>
+  <text x="782" y="486" class="small" text-anchor="middle">map tile requests</text>
+  <path class="line" d="M706 216h110v173h45"/>
+  <path class="line" d="M706 216h90v263h65"/>
+  <path class="line" d="M706 216h76v353h79"/>
+  <path class="line" d="M236 475h88v-55h58"/>
+  <path class="line" d="M236 570h106v-48h40"/>
+</svg>

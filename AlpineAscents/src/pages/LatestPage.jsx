@@ -14,11 +14,11 @@ export default function LatestPage() {
           <p>Recent, source-linked updates from mountaineering communities, covering route learning, safety decisions, conservation and gear.</p>
         </div>
       </section>
-      <section className="container latest-content">
+      <section className="container latest-content" data-reveal>
         <p className="latest-context">This selection combines recent club field reports with a published 2026 gear preview. Report dates refer to the activity described; the gear item shows its publication date. Follow each source for full context and any subsequent updates.</p>
         <div className="latest-grid">
           {sortedUpdates.map((item) => (
-            <article className="latest-card" key={item.id}>
+            <article className="latest-card" key={item.id} data-reveal>
               <img src={item.image} alt={item.imageAlt} loading="lazy" />
               <div className="latest-card__body">
                 <div className="latest-meta"><span>{item.category}</span><time dateTime={item.date}>{new Date(`${item.date}T12:00:00`).toLocaleDateString('en', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time></div>

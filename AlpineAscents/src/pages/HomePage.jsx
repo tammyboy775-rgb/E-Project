@@ -14,7 +14,7 @@ export default function HomePage() {
     <>
       <Hero {...data.hero} />
       <Stats stats={data.stats} />
-      <section className="mountaineering-intro" aria-labelledby="mountaineering-title">
+      <section className="mountaineering-intro" aria-labelledby="mountaineering-title" data-reveal>
         <div className="container mountaineering-intro__grid">
           <div className="mountaineering-intro__copy">
             <p className="eyebrow eyebrow-dark">{home.eyebrow}</p>
@@ -30,15 +30,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mountaineering-directory" id="featured" aria-labelledby="directory-title">
+      <section className="mountaineering-directory" id="featured" aria-labelledby="directory-title" data-reveal>
         <div className="container">
-          <div className="directory-heading">
+          <div className="directory-heading" data-reveal>
             <p className="eyebrow eyebrow-dark">Alpine field guide</p>
             <h2 id="directory-title">{home.cardsTitle}</h2>
           </div>
           <div className="directory-grid">
             {home.sections.map((section, index) => (
-              <Link className="directory-card" to={section.href} key={section.href}>
+              <Link
+                className="directory-card"
+                to={section.href}
+                key={section.href}
+                data-reveal
+                style={{ '--reveal-delay': `${Math.min(index * 55, 330)}ms` }}
+              >
                 <div className="directory-card__image"><img src={section.image} alt={section.alt} loading="lazy" /></div>
                 <div className="directory-card__body">
                   <span className="directory-card__index">{String(index + 1).padStart(2, '0')}</span>

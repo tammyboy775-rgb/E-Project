@@ -294,6 +294,60 @@ main {
 }
 
 /* ------------------------------------------------------------------ *
+ * Subtle entrance and scroll-reveal motion
+ * ------------------------------------------------------------------ */
+
+@keyframes alpine-content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes alpine-content-reveal {
+  from {
+    opacity: 0;
+    translate: 0 20px;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.hero-copy,
+.field-hero__content,
+.knowledge-hero__inner,
+.page-hero__content,
+.guidelines-heading > .container {
+  animation: alpine-content-enter 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.hero-card {
+  animation: alpine-content-enter 700ms cubic-bezier(0.2, 0.7, 0.2, 1) 140ms both;
+}
+
+[data-reveal].reveal-pending:not(.reveal-visible):not(:focus-within) {
+  opacity: 0;
+  translate: 0 20px;
+}
+
+[data-reveal].reveal-pending:focus-within {
+  opacity: 1;
+  translate: 0 0;
+}
+
+[data-reveal].reveal-visible {
+  animation: alpine-content-reveal 620ms cubic-bezier(0.2, 0.7, 0.2, 1) var(--reveal-delay, 0ms) both;
+}
+
+/* ------------------------------------------------------------------ *
  * Shared responsive overrides
  * These span several components/pages, so they live here and must
  * stay at the end of App.css (which loads last).
@@ -371,4 +425,18 @@ main {
   }
 }
 
-
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy,
+  .hero-card,
+  .field-hero__content,
+  .knowledge-hero__inner,
+  .page-hero__content,
+  .guidelines-heading > .container,
+  [data-reveal] {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    translate: none !important;
+    transition: none !important;
+  }
+}

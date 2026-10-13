@@ -36,7 +36,7 @@ export default function GalleryPage() {
           <p>Photographs and films that celebrate mountain landscapes, people and the practice of getting outside.</p>
         </div>
       </section>
-      <section className="container gallery-content">
+      <section className="container gallery-content" data-reveal>
         <div className="gallery-toolbar">
           <div><p className="eyebrow eyebrow-dark">Explore the collection</p><h2>Scenes from high places</h2></div>
           <div className="gallery-tabs" role="group" aria-label="Filter gallery by type">
@@ -47,12 +47,12 @@ export default function GalleryPage() {
         </div>
         <div className="gallery-grid">
           {visibleItems.map((item) => item.type === 'photo' ? (
-            <button className="gallery-photo" type="button" key={item.id} onClick={() => setActivePhotoId(item.id)} aria-label={`Open photo: ${item.title}`}>
+            <button className="gallery-photo" type="button" key={item.id} onClick={() => setActivePhotoId(item.id)} aria-label={`Open photo: ${item.title}`} data-reveal>
               <img src={item.src} alt={item.alt} loading="lazy" />
               <span className="gallery-caption"><strong>{item.title}</strong><span>{item.caption}</span></span>
             </button>
           ) : (
-            <article className="gallery-video" key={item.id}>
+            <article className="gallery-video" key={item.id} data-reveal>
               <div className="gallery-video__frame">
                 <iframe src={item.src} title={item.title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
               </div>

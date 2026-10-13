@@ -22,9 +22,9 @@ export default function GuidelinesPage() {
         </div>
       </header>
 
-      <section className="container guidelines-content" aria-label={guidelines.title}>
+      <section className="container guidelines-content" aria-label={guidelines.title} data-reveal>
         {guidelines.sections.map((section, index) => (
-          <details className="guideline-accordion" key={section.title} open={index === 0}>
+          <details className="guideline-accordion" key={section.title} open={index === 0} data-reveal>
             <summary>
               <span className="guideline-number">{String(index + 1).padStart(2, '0')}</span>
               <span>{section.title}</span>

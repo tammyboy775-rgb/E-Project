@@ -23,7 +23,7 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-      <section className="container story-content">
+      <section className="container story-content" data-reveal>
         <p className="story-source-note"><strong>About these stories:</strong> These summaries are based on published trip reports from The Mountaineers, an independent club. The photographs are illustrative stock images, not photographs from the reported trips.</p>
         <div className="story-filters" aria-label="Filter success stories">
           <label>
@@ -46,7 +46,7 @@ export default function ReviewsPage() {
             {filteredStories.map((story) => {
               const expanded = expandedStoryId === story.id
               return (
-                <article className="story-card" key={story.id}>
+                <article className="story-card" key={story.id} data-reveal>
                   <img src={story.image} alt={story.imageAlt} loading="lazy" />
                   <div className="story-card__body">
                     <div className="story-card__meta"><span>{story.region}</span><span>{story.date}</span><span>{story.activity}</span></div>

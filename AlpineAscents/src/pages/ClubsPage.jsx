@@ -65,7 +65,7 @@ export default function ClubsPage() {
         </div>
       </section>
 
-      <section className="container clubs-explorer" aria-label="Explore mountaineering clubs">
+      <section className="container clubs-explorer" aria-label="Explore mountaineering clubs" data-reveal>
         <div className="clubs-map-panel">
           <div className="clubs-map-heading">
             <div>
@@ -108,6 +108,7 @@ export default function ClubsPage() {
                   key={club.id}
                   onClick={() => setSelectedClubId(club.id)}
                   aria-pressed={selectedClubId === club.id}
+                  data-reveal
                 >
                   <img src={club.image} alt="" loading="lazy" />
                   <span className="club-card__content">

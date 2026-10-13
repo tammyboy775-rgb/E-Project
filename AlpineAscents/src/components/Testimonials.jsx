@@ -3,7 +3,7 @@ import data from '../data/alpineAscentsData.json'
 
 export default function Testimonials({ testimonials = data.testimonials, eyebrow = 'Traveler stories', heading = 'Real memories, real climbs' }) {
   return (
-    <section className="testimonials-section section-spacing" id="testimonials">
+    <section className="testimonials-section section-spacing" id="testimonials" data-reveal>
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow eyebrow-dark">{eyebrow}</p>

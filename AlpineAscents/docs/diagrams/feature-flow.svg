@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Alpine Ascents feature flowchart</title>
+  <desc id="desc">Four lanes show the club directory, success stories, gallery and latest updates, including their filters and user actions.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#62776d"/>
+    </marker>
+    <style>
+      text{font-family:"DM Sans",Arial,sans-serif;fill:#18332e}
+      .title{font-size:26px;font-weight:700;fill:#fff}
+      .subtitle{font-size:14px;fill:#dfe9dc}
+      .lane{font-size:15px;font-weight:700}
+      .label{font-size:13px;font-weight:700}
+      .small{font-size:11px;fill:#51655d}
+      .line{fill:none;stroke:#62776d;stroke-width:2;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="720" rx="18" fill="#f5f3e9"/>
+  <path d="M18 0h1164a18 18 0 0 1 18 18v68H0V18A18 18 0 0 1 18 0Z" fill="#18332e"/>
+  <text x="38" y="42" class="title">Alpine Ascents | Feature journeys</text>
+  <text x="38" y="67" class="subtitle">Each feature pairs focused content with a clear next action</text>
+
+  <rect x="30" y="112" width="1140" height="124" rx="16" fill="#eef2e9" stroke="#b7c6b6"/>
+  <text x="52" y="140" class="lane">CLUB DIRECTORY</text>
+  <rect x="52" y="157" width="182" height="56" rx="11" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="143" y="181" class="label" text-anchor="middle">clubs.json</text><text x="143" y="199" class="small" text-anchor="middle">Club locations and links</text>
+  <path class="line" d="M234 185h40"/>
+  <rect x="280" y="157" width="205" height="56" rx="11" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="382" y="181" class="label" text-anchor="middle">Search and filter</text><text x="382" y="199" class="small" text-anchor="middle">Name, country and region</text>
+  <path class="line" d="M485 185h40"/>
+  <rect x="531" y="157" width="205" height="56" rx="11" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="633" y="181" class="label" text-anchor="middle">Browse map and cards</text><text x="633" y="199" class="small" text-anchor="middle">Select a club or own location</text>
+  <path class="line" d="M736 185h40"/>
+  <rect x="782" y="157" width="350" height="56" rx="11" fill="#18332e"/>
+  <text x="957" y="181" class="label" text-anchor="middle" fill="#fff">Open the organization site or plan a visit</text><text x="957" y="199" class="small" text-anchor="middle" fill="#dfe9dc">Map pins are approximate city or club bases</text>
+
+  <rect x="30" y="250" width="1140" height="124" rx="16" fill="#f0eee5" stroke="#b7c6b6"/>
+  <text x="52" y="278" class="lane">SUCCESS STORIES</text>
+  <rect x="52" y="295" width="182" height="56" rx="11" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="143" y="319" class="label" text-anchor="middle">successStories.json</text><text x="143" y="337" class="small" text-anchor="middle">Published trip summaries</text>
+  <path class="line" d="M234 323h40"/>
+  <rect x="280" y="295" width="205" height="56" rx="11" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="382" y="319" class="label" text-anchor="middle">Filter stories</text><text x="382" y="337" class="small" text-anchor="middle">Region or activity type</text>
+  <path class="line" d="M485 323h40"/>
+  <rect x="531" y="295" width="205" height="56" rx="11" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="633" y="319" class="label" text-anchor="middle">Expand a trip summary</text><text x="633" y="337" class="small" text-anchor="middle">Read the trip takeaway</text>
+  <path class="line" d="M736 323h40"/>
+  <rect x="782" y="295" width="350" height="56" rx="11" fill="#18332e"/>
+  <text x="957" y="319" class="label" text-anchor="middle" fill="#fff">Open the original club report</text><text x="957" y="337" class="small" text-anchor="middle" fill="#dfe9dc">Source is clearly identified</text>
+
+  <rect x="30" y="388" width="1140" height="124" rx="16" fill="#eef2e9" stroke="#b7c6b6"/>
+  <text x="52" y="416" class="lane">GALLERY</text>
+  <rect x="52" y="433" width="182" height="56" rx="11" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="143" y="457" class="label" text-anchor="middle">gallery.json</text><text x="143" y="475" class="small" text-anchor="middle">Photos and video records</text>
+  <path class="line" d="M234 461h40"/>
+  <rect x="280" y="433" width="205" height="56" rx="11" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="382" y="457" class="label" text-anchor="middle">Choose media type</text><text x="382" y="475" class="small" text-anchor="middle">All, photos or videos</text>
+  <path class="line" d="M485 461h40"/>
+  <rect x="531" y="433" width="205" height="56" rx="11" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="633" y="457" class="label" text-anchor="middle">Open or play media</text><text x="633" y="475" class="small" text-anchor="middle">Keyboard photo navigation</text>
+  <path class="line" d="M736 461h40"/>
+  <rect x="782" y="433" width="350" height="56" rx="11" fill="#18332e"/>
+  <text x="957" y="457" class="label" text-anchor="middle" fill="#fff">View the source video or close the photo</text><text x="957" y="475" class="small" text-anchor="middle" fill="#dfe9dc">Escape closes the lightbox</text>
+
+  <rect x="30" y="526" width="1140" height="124" rx="16" fill="#f0eee5" stroke="#b7c6b6"/>
+  <text x="52" y="554" class="lane">LATEST UPDATES</text>
+  <rect x="52" y="571" width="182" height="56" rx="11" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="143" y="595" class="label" text-anchor="middle">latest.json</text><text x="143" y="613" class="small" text-anchor="middle">Dated source-linked items</text>
+  <path class="line" d="M234 599h40"/>
+  <rect x="280" y="571" width="205" height="56" rx="11" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="382" y="595" class="label" text-anchor="middle">Sort by date</text><text x="382" y="613" class="small" text-anchor="middle">Newest items appear first</text>
+  <path class="line" d="M485 599h40"/>
+  <rect x="531" y="571" width="205" height="56" rx="11" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="633" y="595" class="label" text-anchor="middle">Read an update</text><text x="633" y="613" class="small" text-anchor="middle">Review its date and summary</text>
+  <path class="line" d="M736 599h40"/>
+  <rect x="782" y="571" width="350" height="56" rx="11" fill="#18332e"/>
+  <text x="957" y="595" class="label" text-anchor="middle" fill="#fff">Visit the original publisher</text><text x="957" y="613" class="small" text-anchor="middle" fill="#dfe9dc">Follow the link for current context</text>
+</svg>

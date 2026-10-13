@@ -8,7 +8,7 @@ export default function CallToAction({ content = {} }) {
   const href = content.href ?? 'mailto:hello@alpineascents.com'
 
   return (
-    <section className="cta-section">
+    <section className="cta-section" data-reveal>
       <div className="container cta-box" id="contact">
         <div>
           <p className="eyebrow eyebrow-light">{eyebrow}</p>

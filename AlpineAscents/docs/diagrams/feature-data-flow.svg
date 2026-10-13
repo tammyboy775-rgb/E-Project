@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Alpine Ascents feature data-flow diagram</title>
+  <desc id="desc">Shows visitor actions flowing through club, story, gallery and latest pages, using bundled JSON and browser or external services.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#62776d"/>
+    </marker>
+    <style>
+      text{font-family:"DM Sans",Arial,sans-serif;fill:#18332e}
+      .title{font-size:26px;font-weight:700;fill:#fff}
+      .subtitle{font-size:14px;fill:#dfe9dc}
+      .group{font-size:14px;font-weight:700;letter-spacing:1px}
+      .label{font-size:13px;font-weight:700}
+      .small{font-size:11px;fill:#51655d}
+      .line{fill:none;stroke:#62776d;stroke-width:2;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="640" rx="18" fill="#f5f3e9"/>
+  <path d="M18 0h1164a18 18 0 0 1 18 18v68H0V18A18 18 0 0 1 18 0Z" fill="#18332e"/>
+  <text x="38" y="42" class="title">Alpine Ascents | Feature data flow</text>
+  <text x="38" y="67" class="subtitle">The browser combines local interaction and bundled records with optional external content</text>
+
+  <rect x="28" y="112" width="175" height="492" rx="16" fill="#eef2e9" stroke="#b7c6b6"/>
+  <text x="48" y="143" class="group">VISITOR</text>
+  <rect x="52" y="184" width="127" height="76" rx="13" fill="#18332e"/>
+  <text x="115" y="217" class="label" text-anchor="middle" fill="#fff">Visitor</text>
+  <text x="115" y="239" class="small" text-anchor="middle" fill="#dfe9dc">filters and selects</text>
+  <path class="line" d="M179 222h43"/>
+  <path class="line" d="M179 222h22v106h21"/>
+  <path class="line" d="M179 222h22v232h21"/>
+  <path class="line" d="M179 222h22v358h21"/>
+
+  <rect x="228" y="112" width="389" height="492" rx="16" fill="#e9f0e9" stroke="#287565" stroke-width="2"/>
+  <text x="250" y="143" class="group">FEATURE PAGES</text>
+  <rect x="255" y="176" width="330" height="86" rx="13" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="420" y="207" class="label" text-anchor="middle">Clubs directory</text><text x="420" y="230" class="small" text-anchor="middle">Search, region filter, club cards and map</text>
+  <rect x="255" y="286" width="330" height="86" rx="13" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="420" y="317" class="label" text-anchor="middle">Success stories</text><text x="420" y="340" class="small" text-anchor="middle">Trip summaries, filters and source links</text>
+  <rect x="255" y="396" width="330" height="86" rx="13" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="420" y="427" class="label" text-anchor="middle">Gallery</text><text x="420" y="450" class="small" text-anchor="middle">Photo lightbox and publisher-hosted video</text>
+  <rect x="255" y="506" width="330" height="72" rx="13" fill="#fff" stroke="#287565" stroke-width="2"/>
+  <text x="420" y="535" class="label" text-anchor="middle">Latest updates</text><text x="420" y="556" class="small" text-anchor="middle">Date-sorted items and publisher links</text>
+
+  <rect x="668" y="112" width="225" height="492" rx="16" fill="#f0eee5" stroke="#b7c6b6"/>
+  <text x="690" y="143" class="group">BUNDLED DATA</text>
+  <rect x="696" y="180" width="169" height="70" rx="12" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="780" y="208" class="label" text-anchor="middle">clubs.json</text><text x="780" y="230" class="small" text-anchor="middle">Directory and coordinates</text>
+  <rect x="696" y="288" width="169" height="70" rx="12" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="780" y="316" class="label" text-anchor="middle">successStories.json</text><text x="780" y="338" class="small" text-anchor="middle">Published trip summaries</text>
+  <rect x="696" y="396" width="169" height="70" rx="12" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="780" y="424" class="label" text-anchor="middle">gallery.json</text><text x="780" y="446" class="small" text-anchor="middle">Photo and video metadata</text>
+  <rect x="696" y="504" width="169" height="70" rx="12" fill="#d6e89a" stroke="#78933e" stroke-width="2"/>
+  <text x="780" y="532" class="label" text-anchor="middle">latest.json</text><text x="780" y="554" class="small" text-anchor="middle">Dated update records</text>
+
+  <rect x="944" y="112" width="228" height="492" rx="16" fill="#eef0e8" stroke="#b7c6b6"/>
+  <text x="966" y="143" class="group">EXTERNAL SERVICES</text>
+  <rect x="970" y="174" width="176" height="60" rx="12" fill="#fff" stroke="#9aaa9b"/>
+  <text x="1058" y="210" class="label" text-anchor="middle">Geolocation API</text>
+  <rect x="970" y="258" width="176" height="60" rx="12" fill="#fff" stroke="#9aaa9b"/>
+  <text x="1058" y="294" class="label" text-anchor="middle">OpenStreetMap</text>
+  <rect x="970" y="342" width="176" height="60" rx="12" fill="#fff" stroke="#9aaa9b"/>
+  <text x="1058" y="378" class="label" text-anchor="middle">Unsplash</text>
+  <rect x="970" y="426" width="176" height="60" rx="12" fill="#fff" stroke="#9aaa9b"/>
+  <text x="1058" y="462" class="label" text-anchor="middle">YouTube</text>
+  <rect x="970" y="510" width="176" height="60" rx="12" fill="#fff" stroke="#9aaa9b"/>
+  <text x="1058" y="546" class="label" text-anchor="middle">Club publishers</text>
+
+  <path class="line" d="M585 219h111"/>
+  <path class="line" d="M585 329h111"/>
+  <path class="line" d="M585 439h111"/>
+  <path class="line" d="M585 542h111"/>
+  <path class="line" d="M865 215h105"/>
+  <path class="line" d="M865 215h72v73h33"/>
+  <path class="line" d="M865 323h105"/>
+  <path class="line" d="M865 431h105"/>
+  <path class="line" d="M865 539h105"/>
+  <text x="916" y="202" class="small" text-anchor="middle">coordinates</text>
+  <text x="914" y="332" class="small" text-anchor="middle">source link</text>
+</svg>
