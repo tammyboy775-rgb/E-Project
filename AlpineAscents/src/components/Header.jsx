@@ -9,6 +9,7 @@ export default function Header({ nav, phone, brand, visitorSeed }) {
   const location = useLocation()
   const exploreItems = nav.filter((item) => item.group === 'explore')
   const primaryItems = nav.filter((item) => item.group !== 'explore')
+  const scrollToTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
 
   return (
     <header
@@ -21,7 +22,7 @@ export default function Header({ nav, phone, brand, visitorSeed }) {
       }}
     >
       <div className="container header-inner">
-        <NavLink to="/" className="brand" aria-label="Alpine Ascents home">
+        <NavLink to="/" className="brand" aria-label="Alpine Ascents home" onClick={scrollToTop}>
           <span>{brand}</span>
         </NavLink>
 
@@ -31,6 +32,7 @@ export default function Header({ nav, phone, brand, visitorSeed }) {
           aria-label="Main navigation"
           onClick={(event) => {
             if (event.target.closest('a')) {
+              scrollToTop()
               setMenuOpen(false)
               setExploreOpen(false)
             }
