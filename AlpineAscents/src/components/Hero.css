@@ -24,6 +24,24 @@
   object-position: center;
 }
 
+.hero-carousel__image--incoming {
+  animation: hero-image-fade-in 900ms ease-in-out both;
+}
+
+.hero-carousel__image--outgoing {
+  animation: hero-image-fade-out 900ms ease-in-out both;
+}
+
+@keyframes hero-image-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes hero-image-fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;

@@ -1,33 +1,56 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import './Hero.css'
 
 export default function Hero({ eyebrow, title, description, primaryCta, secondaryCta, highlights, snapshot, images = [] }) {
   const [activeImage, setActiveImage] = useState(0)
+  const [previousImage, setPreviousImage] = useState(null)
   const [isPlaying, setIsPlaying] = useState(true)
+
+  const changeImage = useCallback((index) => {
+    const nextImage = (index + images.length) % images.length
+    if (nextImage === activeImage) return
+
+    setPreviousImage(activeImage)
+    setActiveImage(nextImage)
+  }, [activeImage, images.length])
 
   useEffect(() => {
     if (!isPlaying || images.length < 2) return undefined
 
     const intervalId = window.setInterval(() => {
-      setActiveImage((current) => (current + 1) % images.length)
+      changeImage(activeImage + 1)
     }, 5000)
 
     return () => window.clearInterval(intervalId)
-  }, [images.length, isPlaying])
+  }, [activeImage, changeImage, images.length, isPlaying])
 
-  const changeImage = (index) => {
-    setActiveImage((index + images.length) % images.length)
-  }
+  useEffect(() => {
+    if (previousImage === null) return undefined
+
+    const timeoutId = window.setTimeout(() => setPreviousImage(null), 900)
+    return () => window.clearTimeout(timeoutId)
+  }, [activeImage, previousImage])
 
   return (
     <section className="hero-section" id="home">
       {images.length > 0 && (
-        <img
-          className="hero-carousel__image"
-          src={images[activeImage].src}
-          alt=""
-          aria-hidden="true"
-        />
+        <>
+          {previousImage !== null && (
+            <img
+              className="hero-carousel__image hero-carousel__image--outgoing"
+              src={images[previousImage].src}
+              alt=""
+              aria-hidden="true"
+            />
+          )}
+          <img
+            className="hero-carousel__image hero-carousel__image--incoming"
+            key={images[activeImage].id}
+            src={images[activeImage].src}
+            alt=""
+            aria-hidden="true"
+          />
+        </>
       )}
       <div className="hero-overlay" />
 
