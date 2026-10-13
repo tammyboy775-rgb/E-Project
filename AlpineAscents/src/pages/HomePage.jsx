@@ -6,13 +6,15 @@ import CallToAction from '../components/CallToAction'
 import { Link } from 'react-router-dom'
 import data from '../data/alpineAscentsData.json'
 import content from '../data/mountaineeringPages.json'
+import gallery from '../data/gallery.json'
 
 export default function HomePage() {
   const home = content.home
+  const heroImages = gallery.filter((item) => item.type === 'photo').slice(0, 10)
 
   return (
     <>
-      <Hero {...data.hero} />
+      <Hero {...data.hero} images={heroImages} />
       <Stats stats={data.stats} />
       <section className="mountaineering-intro" aria-labelledby="mountaineering-title" data-reveal>
         <div className="container mountaineering-intro__grid">

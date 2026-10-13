@@ -70,26 +70,35 @@ The project uses bundled JSON as deterministic page and interaction data; no sep
 
 Production commands run from `AlpineAscents/`: `npm install`, `npm run lint`, `npm run build`, then `npm run preview`.
 
-| Page | VS Code embedded Chromium 150 | Chrome | Edge | Firefox | Safari |
-| --- | --- | --- | --- | --- | --- |
-| Home `/` | Pass | Not verified | Not verified | Not verified | Not available |
-| History `/history` | Pass | Not verified | Not verified | Not verified | Not available |
-| Types `/types` | Pass | Not verified | Not verified | Not verified | Not available |
-| Techniques `/techniques` | Pass | Not verified | Not verified | Not verified | Not available |
-| Sheltering `/sheltering` | Pass | Not verified | Not verified | Not verified | Not available |
-| Hazards `/hazards` | Pass | Not verified | Not verified | Not verified | Not available |
-| Records `/records` | Pass | Not verified | Not verified | Not verified | Not available |
-| Clubs `/clubs` | Pass | Not verified | Not verified | Not verified | Not available |
-| Success Stories `/success-stories` | Pass | Not verified | Not verified | Not verified | Not available |
-| Gallery `/gallery` | Pass | Not verified | Not verified | Not verified | Not available |
-| Latest `/latest` | Pass | Not verified | Not verified | Not verified | Not available |
-| Guidelines `/guidelines` | Pass | Not verified | Not verified | Not verified | Not available |
-| Contact `/contact` | Pass | Not verified | Not verified | Not verified | Not available |
-| Unknown route / 404 | Pass | Not verified | Not verified | Not verified | Not available |
+| Page | VS Code embedded Chromium 150 |
+| --- | --- |
+| Home `/` | Pass |
+| History `/history` | Pass |
+| Types `/types` | Pass |
+| Techniques `/techniques` | Pass |
+| Sheltering `/sheltering` | Pass |
+| Hazards `/hazards` | Pass |
+| Records `/records` | Pass |
+| Clubs `/clubs` | Pass |
+| Success Stories `/success-stories` | Pass |
+| Gallery `/gallery` | Pass |
+| Latest `/latest` | Pass |
+| Guidelines `/guidelines` | Pass |
+| Contact `/contact` | Pass |
+| Unknown route / 404 | Pass |
+
+**Manual cross-browser verification:** The project owner reports that the site was tested and verified in each of the following browsers.
+
+| Browser | Result |
+| --- | --- |
+| Google Chrome | Pass |
+| Microsoft Edge | Pass |
+| Mozilla Firefox | Pass |
+| Safari | Not tested (no Apple device available) |
 
 **Executed checks:** all 14 direct routes returned HTTP 200 and rendered their expected heading at 360px; all 14 were refreshed at 360px. Home, Records, Success Stories, Gallery, Guidelines, and Contact were checked at 768px and 1280px. No horizontal overflow was measured in 26 route/viewport cases. No browser console errors were observed. All 13 Home images loaded and had non-empty alternative text. The gear checklist updated from 0/10 to 1/10; the visitor count stayed at 1,201 across refresh in the same session; Explore fade/visibility and active History link were checked. Escape was validated with a bubbling keyboard event because this browser harness did not deliver `page.keyboard.press()` events.
 
-Standalone browser binaries were detected, but headless command-line attempts returned no DOM or screenshot output. Chrome, Edge and Firefox are therefore explicitly unverified, not reported as passing. Safari was not available on this Windows environment. A native-browser run remains a submission gate.
+The route, viewport and interaction checks above were run in the VS Code embedded Chromium environment. The separate Chrome, Edge and Firefox results are manual cross-browser verification reported by the project owner. Safari was not tested because an Apple device was unavailable.
 
 **Post-audit checks:** the six source-linked Success Stories cards rendered; the activity filter returned the expected match; source links pointed to The Mountaineers; and the expandable summary controls remained connected to their panels. `npm run lint` and `npm run build` both passed after this update.
 
@@ -142,6 +151,7 @@ The Success Stories page reads six responsive, source-linked trip reports from J
 - [x] React source, routes, JSON content, and installation steps.
 - [x] Project report, test data, diagrams, and assumptions document.
 - [ ] Record a demo video covering navigation states, counter, ticker, each content page, Records map, gallery and mobile layout.
-- [ ] Complete native Chrome, Edge, and Firefox testing (and Safari if an Apple device is available).
+- [x] Test and verify the site in Chrome, Edge, and Firefox.
+- [ ] Test in Safari if an Apple device becomes available.
 - [ ] Confirm Raalujah's and Derrick's actual diagram contributions before final attribution.
 - [ ] Pull the published `main` before teammates create feature branches.
