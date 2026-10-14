@@ -2,6 +2,7 @@ import './Header.css'
 import { useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import VisitorCounter from './VisitorCounter'
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 export default function Header({ nav, phone, brand, visitorSeed }) {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -66,7 +67,7 @@ export default function Header({ nav, phone, brand, visitorSeed }) {
                   setExploreOpen((open) => !open)
                 }
               }}
-            >Explore <span aria-hidden="true">⌄</span></button>
+            >Explore<span className="explore-caret" aria-hidden="true">{exploreOpen ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}</span></button>
             <div className="explore-links" id="explore-links">
               {exploreItems.map((item) => (
                 <NavLink key={item.href} to={item.href} className={({ isActive }) => isActive ? 'active' : ''}>{item.label}</NavLink>

@@ -233,7 +233,7 @@
   line-height: 1.2;
   text-transform: uppercase;
   white-space: nowrap;
-  transition: color 220ms ease, background-color 220ms ease, border-color 220ms ease;
+  transition: color 220ms ease, background-color 220ms ease, border-color 220ms ease, gap 220ms ease;
 }
 
 .main-nav > a:hover,
@@ -274,15 +274,30 @@
 .explore-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 0;
   border: 1px solid transparent;
   background: transparent;
   cursor: pointer;
 }
 
-.explore-toggle span {
+.explore-caret {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
   font-size: 1rem;
   line-height: 0.8;
+  transform: translateY(-3px);
+  transition: width 220ms ease, opacity 220ms ease, transform 220ms ease;
+}
+
+.explore-menu--open .explore-toggle {
+  gap: 5px;
+}
+
+.explore-menu--open .explore-caret {
+  width: 0.65em;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .explore-links {
